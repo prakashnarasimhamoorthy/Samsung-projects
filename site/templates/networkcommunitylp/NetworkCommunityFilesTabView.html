@@ -1,0 +1,214 @@
+<div class="block-navbtn col-xs-12">
+	<div class="col-xs-8 no-padd title-to-hide">
+		<h4>43 Files <span class="hidden-xs">in Community</span></h4>
+	</div>
+	<div class="animated-search pull-right">
+		<i class="fa fa-search show-input"></i>
+		<input type="text" class="" placeholder="Start typing here...">
+		<i class="fa fa-times"></i>
+	</div>
+</div>
+
+<div class="clearfix status-box col-xs-12">
+	<div class="tab-content">
+		<div class="tab-pane message-tab">
+			<div class="message-wrap">
+				<div class="bottom arrow for-message"></div>
+				<textarea placeholder="Share your thoughts..."></textarea>
+				<div class="clearfix spacer"></div>
+				<a href="#network-communitylp-activities" class="btn-send btn btn-default pull-right">Send</a>
+			</div>
+		</div>
+		<div class="tab-pane question-tab">
+			<div class="message-wrap">
+				<div class="bottom arrow for-question"></div>
+				<textarea placeholder="Ask what you are interested in..."></textarea>
+				<div class="clearfix spacer"></div>
+				<a href="#network-communitylp-activities" class="btn-send btn btn-default pull-right">Send</a>
+			</div>
+		</div>
+		<div class="tab-pane active file-tab">
+			<div class="message-wrap">
+				<div class="file-wrap clearfix">
+					<div class="bottom arrow for-file"></div>
+					<span><i class="fa fa-file-text-o"></i><i class="fa fa-file-text-o rotated"></i>Drag and Drop file here</span>
+					<div class="file-actions">
+						<p>
+							<i class="fa fa-2x fa-upload visible-xs"></i>
+							<a href="#" class="upload-btn"><i class="fa fa-2x fa-upload hidden-xs"></i> Upload File from computer</a>
+							<input type="file" accept="application/pdf" multiple="" name="files[]" class="hidden" id="upload-files">
+							<i class="clearfix"></i>
+							<em class="hidden-xs hidden-sm">or Drag&Drop file here</em></p>
+						<p>
+							<span class="img-gdrive visible-xs"><img src="assets/img/research_groups/icon-gdrive-small-active.png" width="26px" alt="gdrive"></span>
+							<a href="#network-communitylp-files-search"><img src="assets/img/research_groups/icon-gdrive-small-active.png" width="26px" alt="gdrive" class="hidden-xs"> Choose from Google Drive</a>
+						</p>
+					</div>
+
+				</div>
+				<div class="file-search-gdrive">
+					<div class="bottom arrow for-file hidden-xs"></div>
+					<div class="gsearch-wrap">
+						<i class="fa fa-search"></i>
+						<input placeholder="Search Google Drive " type="text">
+					</div>
+					<ul class="folders">
+						<li><a href="#network-communitylp-files-gdrive"><i class="fa fa-folder"></i>All Items</a></li>
+						<li><a href="#network-communitylp-files-gdrive"><i class="fa fa-folder"></i>My Drive</a></li>
+						<li><a href="#network-communitylp-files-gdrive"><i class="fa fa-folder"></i>Recent</a></li>
+						<li><a href="#network-communitylp-files-gdrive"><i class="fa fa-folder"></i>Shared with me</a></li>
+						<li><a href="#network-communitylp-files-gdrive"><i class="fa fa-folder"></i>Starred</a></li>
+					</ul>
+					<div class="files-list">
+						<a class="parent-folder" href="#network-communitylp-files-search"><i class="fa fa-angle-left"></i><span>Parent folder</span></a>
+						<ul>
+							<% _.each (gDriveFiles.toJSON(), function(file, index) { %>
+								<li><label for=""><img src="<%= file.icon %>" width="16" alt=""><%= file.name %> <input class="pull-right" <%= (file.checked == true) ? "checked" : "" %> type="checkbox"></label></li>
+							<% }) %>
+						</ul>
+					</div>
+				</div>
+				<div class="folders-in-community row">
+					<h5><i class="fa fa-folder-open"></i><a href="">Cloud Computering</a>/<a href="">Machine Learning</a>/<span>Algorithms</span><i class="fa fa-angle-right"></i></h5>
+					<div class="folders-list">
+						<span class="folders-title">Folders in thes Community:</span>
+						<ul>
+							<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Engineering Profession</a>
+								<ul>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Fields, Waves & Electromagnetics</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>General Topics for Engineers (Math, Science & Engineering)</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Geoscience</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Nuclear Engineering</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Photonics & Electro-Optics</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Power, Energy, & Industry Applications</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Robotics & Control Systems</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Signal Processing & Analysis</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Machine Learning</a></li>
+									<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Algorithms</a>
+										<ul>
+											<li><i class="fa fa-folder-open"></i>Misc Files</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="file-description col-xs-12 no-padd">
+					<div class="bottom arrow for-file hidden-xs"></div>
+					<h5>Please provide information about the files selected:</h5>
+					<p><span class="asterisk">*</span> Required fields
+					<div class="form-wrap col-xs-12 no-padd">
+						<form class="upload-file-form row" action="">
+							<label for="">
+								<span class="col-sm-3 col-lg-2 no-padd-left title">File Name <span class="asterisk">*</span></span>
+								<span class="col-sm-9 col-lg-10 no-padd"><input class="drop-file-name upload-file-name" type="text"></span>
+							</label>
+							<label for="">
+								<span class="col-sm-3 col-lg-2 no-padd-left title">Description</span>
+								<span class="col-sm-9 col-lg-10 no-padd"><textarea name="" class="upload-file-description" cols="30" rows="10"></textarea></span>
+							</label>
+							<label for="">
+								<span class="col-sm-3 col-lg-2 no-padd-left title">Location <span class="asterisk">*</span></span>
+								<span class="col-sm-9 col-lg-10 no-padd">
+									<div class="location-path">
+										<i class="fa fa-folder"></i><a href="">Cloud Computering</a>/<a href="">Machine Learning</a>/<a href="">Algorithms</a><i class="fa fa-angle-right"></i>
+									</div>
+									<div class="location-path-select">
+										<span>Folders in thes Community:</span>
+										<a href="" class="add-new-folder"><i class="fa fa-plus"></i></a>
+										<ul>
+											<li><a href=""><i class="fa fa-folder"></i>Cloud Computerin</a>
+												<ul>
+													<li><a href=""><i class="fa fa-folder"></i>Fields, Waves & Electromagnetics</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>General Topics for Engineers (Math, Science & Engineering)</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Geoscience</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Nuclear Engineering</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Photonics & Electro-Optics</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Power, Energy, & Industry Applications</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Robotics & Control Systems</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Signal Processing & Analysis</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Misc Files</a></li>
+													<li><a href=""><i class="fa fa-folder"></i>Machine Learning</a>
+														<ul>
+															<li><i class="fa fa-folder-open"></i>Algorithms</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<div class="buttons center-block col-xs-12 no-padd">
+											<div class="col-xs-6">
+												<a href="#" class="btn btn-default btn-apply pull-right">Apply</a>
+											</div>
+											<div class="col-xs-6">
+												<a href="#" class="btn btn-default btn-cancel">Cancel</a>
+											</div>
+										</div>
+									</div>
+								</span>
+							</label>
+							<label for="">
+								<span class="col-sm-3 col-lg-2 no-padd-left title">Tags <span class="asterisk">*</span></span>
+								<span class="col-sm-9 col-lg-10 no-padd"><input class="file-tags-input" type="text"></span>
+							</label>
+						</form>
+					</div>
+				</div>
+				<!-- <input class="search-documents" type="text" placeholder="Share a document from your library for the community"> -->
+				<div class="clearfix spacer"></div>
+				<a href="#network-communitylp-documents" class="btn-send btn btn-default pull-right">Send</a>
+			</div>
+		</div>
+	</div>
+
+	<ul class="nav nav-tabs community-content-subnav">
+		<li>
+			<a href="#files-tab .message-tab" data-toggle="tab">
+				<i class="fa fa-pencil-square-o"></i>
+				<span class="hidden-xs">Message</span>
+			</a>
+		</li>
+		<li>
+			<a href="#files-tab .question-tab" data-toggle="tab">
+				<i class="fa fa-question"></i>
+				<span class="hidden-xs">Question</span>
+			</a>
+		</li>
+		<li class="active">
+			<a href="#files-tab .file-tab" data-toggle="tab">
+				<i class="fa fa-file-text-o"></i>
+				<span class="hidden-xs">File</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+<div class="folders-in-community owner">
+	<h5><i class="fa fa-folder-open"></i><a href="">Cloud Computering</a>/<a href="">Machine Learning</a>/<span>Algorithms</span><i class="fa fa-angle-right"></i></h5>
+	<div class="folders-list">
+		<span class="folders-title">Folders in thes Community:</span>
+		<ul>
+			<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Engineering Profession</a>
+				<ul>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Fields, Waves & Electromagnetics</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>General Topics for Engineers (Math, Science & Engineering)</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Geoscience</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Nuclear Engineering</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Photonics & Electro-Optics</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Power, Energy, & Industry Applications</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Robotics & Control Systems</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Signal Processing & Analysis</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Machine Learning</a></li>
+					<li><a href="#network-communitylp-files-foldersfilelist"><i class="fa fa-folder"></i>Algorithms</a>
+						<ul>
+							<li><i class="fa fa-folder-open"></i>Misc Files</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="documents-list col-xs-12 no-padd"></div>
+<img class="center-block load-spinner" src="assets/img/3-circle-bar.gif" width="60px"/>

@@ -1,0 +1,30 @@
+<% _.each(data, function(question, index) { %>
+	<div class="item-wrap -item-<%= id + index %>">
+		<div class="item-remove"></div>
+		<div class="item-content">
+			<a class="btn btn-remove-item" href="#" data-id="<%= id + index %>" data-toggle="tooltip" data-placement="top" title="Remove item"><i class="fa fa-times"></i></a>
+			<div class="table">
+				<div class="avatar cell">
+					<a href="#profile-searchresult">
+						<img src="assets/img/profile/avatars/<%= question.avatar %>" width="80" alt="avatar">
+						<p><%= question.name %></p>
+					</a>
+				</div>
+				<div class="body cell">
+					<% if (question.answers == 0) { %>
+					<a class="answers-btn btn btn-gray inactive">
+						<% } else { %>
+						<a href="#network-qa-single" class="answers-btn btn btn-gray">
+							<% } %>
+							<%= question.answers %> answer<%= question.answers != 1 ? 's' : '' %>
+						</a>
+
+						<span class="when"><%= question.when %></span>
+
+						<p class="question-text"><a href="#network-qa-single"><%= question.text %></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<%}) %>

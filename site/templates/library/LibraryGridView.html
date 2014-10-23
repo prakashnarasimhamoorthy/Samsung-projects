@@ -1,0 +1,18 @@
+<div class="grid-results col-xs-12 col-sm-12 col-md-9 col-lg-10 no-padd">
+	<% _.each(articles, function(article,index) { %>
+	<div class="grid-item">
+		<h5 class="article-grid-popup hidden-xs"><%=article["Title"]%></h5>
+		<h5 class="visible-xs"><a href="main.html#/librarypopup-mobile"><%=article["Title"]%></a></h5>
+		<ul>
+			<li><%=article["Authors"]%></li>
+			<li><%=article["Source"]%></li>
+			<li><%=article["Year"]%></li>
+		</ul>
+		<div class="clearfix"></div>
+		<p><%=article["Text"]%></p>
+		<div class="clearfix"></div>
+	</div>
+	<div class="slidedown-window"></div>
+	<% }); %>
+</div>
+<div class="big-spacer clearfix"></div>

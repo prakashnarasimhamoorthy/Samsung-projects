@@ -1,0 +1,164 @@
+<div class="big-spacer clearfix"></div>
+<div class="container no-padd padd-xs">
+	<div id="search-online">
+		<div class="col-xs-12">
+			<h4>Search Online</h4>
+			<a href="#" class="btn close-btn col-xs-1 pull-right no-padd">
+				<i class="fa fa-times"></i>
+			</a>
+			<p class="txt-header">Add documents to your library from our supported online sources.</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="col-md-3 hidden-sm"></div>
+		<div class=" col-xs-12 col-sm-10 col-md-6">
+			<div class="header-search-box"><div class="header-search col-lg-12">
+				<div class="info-block clearfix">
+					<div class="search-select pull-left">
+						<ul class="nav">
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+									<b class="search-source">IEEE Explore</b> <i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="google-scholar">     <i class="fa fa-caret-right"></i><span>Google Scholar</span></a></li>
+									<li>
+										<a class="ieee-explore hidden-xs hidden-sm active"><i class="fa fa-caret-right"></i><span>IEEE Explore</span></a>
+										<a class="ieee-explore hidden-md hidden-lg active"><i class="fa fa-caret-right"></i><span>IEEE Explore</span></a>
+									</li>
+									<li><a class="academic-search">    <i class="fa fa-caret-right"></i><span>Academic Search</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="search-input-box">
+						<form action="">
+							<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="search-text tt-input" type="text" placeholder="Search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Open Sans'; font-size: 16px; font-style: italic; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="tt-dataset-3"></div></span></span>
+							<a href="#searchresults-library" class="library-search-btn"><i class="fa fa-search fa-2x"></i></a>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-3 hidden-sm"></div>
+		<div class="col-sm-2 no-padd-left visible-sm">
+			<button class="mobile-filter-btn btn btn-info pull-right hidden-lg hidden-md">
+				<i class="fa fa-filter"></i>
+			</button>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-xs-12 col-md-3 col-lg-2 hidden-xs hidden-sm" id="files-filters">
+			<div id="tab1" class="info-block filter">
+				<h4>Type</h4>
+				<i class="fa fa-chevron-up slide-arrow"></i>
+				<div class="clearfix"></div>
+				<div class="slide-box">
+					<div class="radio-btns btn-group" data-toggle="buttons">
+						<label class="btn active">
+							<input type="radio" name="options" id="option1" checked>
+							<p>All</p>
+						</label>
+						<label class="btn">
+							<input type="radio" name="options" id="option2">
+							<p>Conferences (56)</p>
+						</label>
+						<label class="btn">
+							<input type="radio" name="options" id="option3">
+							<p>Books & eBooks (651)</p>
+						</label>
+						<label class="btn">
+							<input type="radio" name="options" id="option4"/>
+							<p>Patents (432)</p>
+						</label>
+						<label class="btn">
+							<input type="radio" name="options" id="option5"/>
+							<p>Magazine articles (36)</p>
+						</label>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div id="tab2" class="info-block filter">
+				<h4>Publish date</h4>
+				<i class="fa fa-chevron-up slide-arrow"></i>
+				<div class="clearfix"></div>
+				<div class="slide-box">
+					<label class="checkbox-all">
+						<input type="checkbox" class="checkbox" /><p>All time</p>
+					</label>
+					<div class="checkbox-group">
+						<label>
+							<input type="checkbox" class="checkbox" /><p>Last year (56)</p>
+						</label>
+						<label>
+							<input type="checkbox" class="checkbox" /><p>Last two years (6521)</p>
+						</label>
+						<label>
+							<input type="checkbox" class="checkbox" /><p>Last three years (12432)</p>
+						</label>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="files-list col-xs-12 col-md-9 col-lg-10 no-padd padd-sm">
+			<% _.each(data, function(article,index) { %>
+			<div class="list-item">
+				<h5 class="article-list-popup hidden-xs pull-left"><%=article["Title"]%></h5>
+
+				<div class="addition pull-right hidden-xs">
+					<% if (article["Added"] == false) { %>
+					<ul class="nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Add to <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" >
+								<li><a href="#">Library</a></li>
+								<li><a href="#">Library and my publications</a></li>
+							</ul>
+						</li>
+					</ul>
+					<% } else { %>
+					<p class="added"><i class="fa fa-check"></i> Added</p>
+					<% } %>
+				</div>
+				<div class="clearfix"></div>
+				<h5 class="visible-xs"><a href="main.html#/librarypopup-mobile"><%=article["Title"]%></a></h5>
+				<ul class="hidden-xs">
+					<li><%=article["Authors"]%></li>
+					<li><i class="fa fa-circle"></i> <%=article["Source"]%></li>
+					<li><i class="fa fa-circle"></i> <%=article["Year"]%></li>
+				</ul>
+				<div class="visible-xs authors-and-source">
+					<p>Authors: <a href="#"><%=article["Authors"]%></a></p>
+					<p>Source: <a href="#"><%=article["Source"]%></a> (2012)</p>
+				</div>
+				<div class="clearfix"></div>
+				<p class="hidden-xs"><%=article["Text"]%></p>
+				<div class="clearfix"></div>
+				<div class="addition pull-right visible-xs">
+					<% if (article["Added"] == false) { %>
+					<ul class="nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Add to <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" >
+								<li><a href="#">Library</a></li>
+								<li><a href="#">Library and my publications</a></li>
+							</ul>
+						</li>
+					</ul>
+					<% } else { %>
+					<p class="added"><i class="fa fa-check"></i> Added</p>
+					<% } %>
+				</div>
+				<div class="big-spacer clearfix visible-xs"></div>
+			</div>
+			<% }); %>
+		</div>
+
+	<div class="big-spacer clearfix"></div>
+	</div>
+</div>
+<div class="big-spacer clearfix"></div>
+

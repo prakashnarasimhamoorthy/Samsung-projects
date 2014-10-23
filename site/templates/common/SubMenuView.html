@@ -1,0 +1,28 @@
+<div class="navbar hidden-xs">
+	<div class="container">
+		<div class="row">
+			<ul id="main-nav-dropdown" class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" id="<%= current.id %>" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/img/main_menu/<%= current.icon %>" width="26" alt="icon">&nbsp;
+						<%= current.title %>
+						<i class="fa fa-chevron-down pull-right"></i>
+					</a>
+					<ul class="dropdown dropdown-menu main-menu-links">
+						<% _.each(dropMenu, function(item) { %>
+						<li <% if (item.hidden == true) { %> class="hidden" <% } %>>
+							<a href="<%= item.link %>">
+								<img src="assets/img/main_menu/<%= item.icon %>" width="26" alt="icon">
+								<%= item.title %>
+							</a>
+						</li>
+						<% }); %>
+					</ul>
+				</li>
+			</ul>
+			<ul class="sub-menu-links nav navbar-nav"></ul>
+			<div class="toolbox nav navbar-nav navbar-right"></div>
+			<ul class="right-nav-links nav navbar-nav navbar-right"></ul>
+		</div>
+	</div>
+</div>

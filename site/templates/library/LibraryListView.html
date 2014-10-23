@@ -1,0 +1,15 @@
+<% _.each(articles, function(article,index) { %>
+	<div class="list-item">
+		<h5 class="article-list-popup hidden-xs"><%=article["Title"]%></h5>
+		<h5 class="visible-xs"><a href="main.html#/librarypopup-mobile"><%=article["Title"]%></a></h5>
+		<ul>
+			<li><%=article["Authors"]%></li>
+			<li><i class="fa fa-circle"></i> <%=article["Source"]%></li>
+			<li><i class="fa fa-circle"></i> <%=article["Year"]%></li>
+		</ul>
+		<div class="clearfix"></div>
+		<p><%=article["Text"]%></p>
+		<div class="clearfix"></div>
+	</div>
+	<div class="slidedown-window"></div>
+<% }); %>

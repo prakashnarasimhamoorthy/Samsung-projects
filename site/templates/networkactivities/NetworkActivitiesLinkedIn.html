@@ -1,0 +1,124 @@
+<div class="linkedin">
+	<% _.each (data, function(activity, index) { %>
+		<%= index == 2 ? people_mobile : '' %>
+		<%= index == 3 ? communities_mobile : '' %>
+		<div class="col-xs-12 info-block no-padd no-padd-bottom">
+			<div class="table post-head">
+				<div class="cell img">
+					<a href="#"><img src="assets/img/profile/avatars/<%= activity.avatar %>" alt="avatar" width="100%"></a>
+				</div>
+				<div class="cell title">
+					<p>
+						<a href="#"><%= activity.name %></a>
+						shared
+						<a href="#"><b><%= activity.title %></b></a></p>
+					<p>
+						<span class="via-linkedin">via Linkedin <i class="fa fa-linkedin-square"></i></span>
+						<span class="time">
+							<span class="timespan"><%= activity.timespan %></span>
+							<span class="datetime"><%= activity.datetime %></span>
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="table post-description">
+				<div class="cell img">
+					<img src="assets/img/network_communities/<%= activity.picture %>" alt="picture" width="100%">
+				</div>
+				<div class="cell description">
+					<p><%= activity.text %> ...</p>
+					<div class="action col-xs-12 no-padd hidden-xs">
+						<div class="more pull-left">
+							<a href="#"><b>More</b></a>
+						</div>
+						<div class="share-wrap pull-right">
+							<a href="#" data-toggle="dropdown" class="btn btn-share"><i class="fa fa-share"></i>Share</a>
+							<div class="dropdown-menu">
+								<div class="dropdown-arrow"></div>
+								<ul>
+									<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="block-comments">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<% if (activity.comments == true) { %>
+						<div class="comments-box">
+						<div class="nav-comments"></div>
+						<div class="table comment-body">
+							<div class="img cell hidden-xs">
+								<a href="#profile"><img class="img-responsive" src="assets/img/home/avatar/1.png" alt="avatar"></a>
+							</div>
+							<div class="content cell">
+								<p class="name">Hugo Díaz</p>
+								<p><span class="data">25 Apr 2014</span></p>
+								<p>It has to answer two simple questions, is it useful or not? and for what.</p>
+							</div>
+						</div>
+						<div class="table comment-body">
+							<div class="img cell hidden-xs">
+								<a href="#profile"><img class="img-responsive" src="assets/img/home/avatar/2.png" alt="avatar"></a>
+							</div>
+							<div class="content cell">
+								<p class="name">Tamer Ali</p>
+								<p><span class="data">16 Apr 2014</span></p>
+								<p>Have it started or not yet?</p>
+							</div>
+						</div>
+						<div class="table comment-body">
+							<div class="img cell hidden-xs">
+								<a href="#profile"><img class="img-responsive" src="assets/img/home/avatar/2.png" alt="ava"></a>
+							</div>
+							<div class="content cell">
+								<p class="name">Jim Solderitsch</p>
+								<p><span class="data">16 Apr 2014</span></p>
+								<p>Not working for me -- or it hasn't started yet!</p>
+							</div>
+						</div>
+					</div>
+					<% } %>
+					<div class="leave-comment table">
+						<div class="avatar cell">
+							<img src="assets/img/profile/avatars/person-1.png" width="30px">
+						</div>
+						<div class="input cell">
+							<input type="text" class="form-control" placeholder="Add a comment">
+							<div class="form-expanded">
+								<textarea>It will be quite </textarea>
+								<div class="block-send">
+									<a class="btn-cancel btn btn-default pull-right" href="#">Cancel</a>
+									<a class="btn-send btn btn-default pull-right" href="#">Send</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block-actions visible-xs">
+				<a href="#" class="btn btn-comment"><i class="fa fa-comment"></i>Comment</a>
+				<div class="share-wrap">
+					<a href="#" data-toggle="dropdown" class="btn btn-share"><i class="fa fa-share"></i>Share</a>
+					<div class="dropdown-menu">
+						<div class="dropdown-arrow"></div>
+						<ul>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	<% }); %>
+</div>

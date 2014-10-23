@@ -1,0 +1,40 @@
+<% _.each (data, function(community) { %>
+	<div class="community">
+		<div class="col-xs-4 col-md-2 img">
+			<a href="#"><img src="assets/img/network_communities/<%= community.image %>" class="img-responsive" alt="community logo"></a>
+		</div>
+		<div class="col-xs-8 col-md-4 description">
+			<a class="community-title" href="#"><%= community.title %></a>
+			<div class="popup-wrap">
+				<i class="fa fa-<%= community.icon %> popup-toggle"></i>
+				<p class="popup-prompt">
+					<%= community.popup %>
+				</p>
+			</div>
+			<p class="hidden-md hidden-lg">
+				Provided by <a href="#"><%= community.providedBy %></a>
+			</p>
+			<p>
+				<%= community.text %>
+			</p>
+			<a href="#" class="btn btn-info btn-learn-more hidden-md hidden-lg"><%= community.button %></a>
+			<a href="#" class="hidden-md hidden-lg members-count"><%= community.membersNumber %> members</a>
+		</div>
+		<div class="col-xs-3 provide hidden-xs hidden-sm">
+			<p>
+				Provided by <a href="#"><%= community.providedBy %></a>
+			</p>
+			<a href="#" class="btn btn-info btn-learn-more"><%= community.button %></a>
+		</div>
+		<div class="col-xs-3 hidden-xs hidden-sm">
+			<div class="members">
+				<% _.each(community.membersIds, function(memberId) {%>
+					<a class="member" href="#profile-searchresult"><img src="assets/img/network_communities/members/<%= memberId %>.jpg" class="img-responsive" alt="member"></a>
+				<% });%>
+				<div class="clearfix"></div>
+				<a href="#"><%= community.membersNumber %> members</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<% }); %>

@@ -1,0 +1,35 @@
+<% _.each (data, function(document, index) { %>
+	<div class="col-xs-12 no-padd doc-item">
+		<h4 class="hidden-xs">
+			<a href="#libraryarticle"><%= document.title %></a>
+		</h4>
+		<h4 class="visible-xs">
+			<a href="#libraryarticle"><%= document.title %></a>
+			<% if (document.gdrive == true) { %>
+				<img src="assets/img/research_groups/icon-gdrive-small-active.png" width="14"/>
+			<% } %>
+		</h4>
+
+		<p class="hidden-xs">
+			<a href="#libraryarticle"><%= document.authors %></a> •
+			<a href="#libraryarticle"><%= document.category %></a> •
+			<a href="#libraryarticle"><%= document.year %></a>
+		</p>
+		<p class="visible-xs">
+			<%= document.authors %> (<%= document.year %>)
+		</p>
+		<p class="hidden-xs"><%= document.text %></p>
+
+		<% if (document.in_your_library != undefined) { %>
+			<p class="in-your-library hidden-xs">
+				In your Library:
+				<i class="fa fa-folder"></i>
+				<a href="#"><%= document.in_your_library.main %></a> /
+				<a href="#"><%= document.in_your_library.sub %></a>
+			</p>
+		<% } %>
+		<% if (document.add == true) { %>
+			<a href="#" class="btn-add btn btn-default hidden-xs">Add to Library</a>
+		<% } %>
+	</div>
+<% }); %>

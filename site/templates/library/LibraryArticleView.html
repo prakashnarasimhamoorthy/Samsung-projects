@@ -1,0 +1,940 @@
+<!-- Desktop -->
+<div class="container no-padd padd-sm ">
+	<div id="library-article" class="col-md-9 col-lg-10 no-padd-left">
+		<div class="box-folder-nav">
+
+			<% if(commonApp.props.librarySearchResult == true) {
+				commonApp.props.librarySearchResult = false;
+			%>
+				<a href="#searchresults-library" class="btn btn-return pull-left "><i class="fa fa-arrow-left"></i> Return <span class="hidden-xs">to Search Results</span></a>
+			<% } else if (commonApp.props.ResearchGroupsArticle == true) {
+				commonApp.props.ResearchGroupsArticle = false;
+				appUtil.makeSubNavPillActive('li-research-groups');
+			%>
+				<a href="#researchgroups-documents" class="btn btn-return pull-left "><i class="fa fa-arrow-left"></i> Return <span class="hidden-xs">to Documents</span></a>
+			<% } else { %>
+				<a href="#library" class="btn btn-return pull-left"><i class="fa fa-arrow-left"></i> Return <span class="hidden-xs">to Library List</span></a>
+			<% } %>
+
+			<div class="pagination pull-right hidden-sm">
+				Showing <span class="hidden-xs">Article </span><b>3</b> of <b>48</b>
+				<a class="btn btn-left btn-default"><i class="fa fa-chevron-left"></i></a>
+				<a class="btn btn-right btn-default"><i class="fa fa-chevron-right"></i></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="article-heading">
+			<h4 class="col-xs-12 col-sm-9 no-padd-left">Effective personalized recommendation based on time-framed navigation clustering and association mining</h4>
+			<div class="col-sm-3 download-box hidden-sm no-padd-right">
+				<a href="#" class="btn btn-download"><img src="assets/img/library/icon-pdf-curve.png" width="21" alt="view">View PDF</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="article-body col-xs-12 no-padd">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs article-nav">
+				<li class="active col-xs-4"><a href="#overview" data-toggle="tab"><span class="hidden-xs">Article </span>Overview</a></li>
+				<li class="col-xs-4"><a href="#organize" data-toggle="tab">Organize</a></li>
+				<li class="col-xs-4"><a href="#share" data-toggle="tab"><span class="hidden-xs">Share & </span>Collaborate</a></li>
+			</ul>
+			<div class="clearfix"></div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="overview">
+					<div class="col-sm-4 padd-xs no-padd-left hidden-xs">
+						<div class="info-block article-authors">
+							<h5>Authors</h5>
+							<div class="author table">
+								<div class="description cell">
+									<p class="author-name">
+										Feng-Hsu Wang
+									</p>
+								</div>
+							</div>
+							<div class="author table">
+								<div class="description cell">
+									<p class="author-name">
+										Hsiu-Mei Shao
+									</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="info-block author-keywords">
+							<h5>Author keywords</h5>
+							<ul>
+								<li>association mining</li>
+								<li>clustering</li>
+								<li>collaborative filtering</li>
+								<li>personalized  recommendation</li>
+								<li>web usage mining</li>
+								<li>web-based learning environment</li>
+							</ul>
+						</div>
+						<div class="info-block publishing-info">
+							<h5>Publishing information</h5>
+							<p><a href="#">Expert Systems with Applications (2004) Volume: 27 Issue: 3</a> Pages: 365-377</p>
+							<p>ISSN: 09574174</p>
+							<p>DOI: <a href="#">10.1016/j.eswa.2004.05.005</a></p>
+							<p>Available from <a href="#">linkinghub.elsevier.com</a></p>
+						</div>
+					</div>
+					<div class="col-sm-8 no-padd padd-xs box-border-left hidden-xs">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="info-block abstract-info">
+									<h5>Abstract <a href="#" class="edit-info"><i class="fa fa-edit"></i> Edit document metadata</a></h5>
+									<p>
+										Personalized recommendation by predicting user-browsing behavior using association-mining technology has gained much attention in web personalization research area. However, the resulting association patterns did not perform well in prediction of future browsing patterns due to the low matching rate of the resulting rules and users' browsing behavior. This research proposes a new personalized recommendation method integrating user clustering and association-mining techniques. Historical navigation sessions for each user are divided into frames of sessions based on a specific time interval. This research proposes a new clustering method, called HBM (Hierarchical Bisecting Medoids Algorithm) to cluster users based on the time-framed navigation sessions. Those navigation sessions of the same group are analyzed using the association-mining method to establish a recommendation model for similar students in the future. Finally, an application of this recommendation method to an e-learning web site is presented, including plans of recommendation policies and proposal of new efficiency measures. The effectiveness of the recommendation methods, with and without time-framed user clustering, are investigated and compared. The results showed that the recommendation model built with user clustering by time-framed navigation sessions improves the recommendation services effectively.
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="info-block citation">
+									<h5>Citation
+										<span class="action-btns">
+											<a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a>
+											<a href="#" class="btn btn-copy"><i class="fa fa-clipboard"></i></a>
+											<a href="#" class="btn btn-tex">T<sub>E</sub>X</a>
+										</span>
+									</h5>
+
+									<textarea name="" id="citation-mob">Wang, F. H., & Shao, H. M. (2004). Effective personalized recommendation based on time-framed navigation clustering and association mining. Expert systems with applications, 27(3), 365-377.
+									</textarea>
+									<div class="table">
+										<div class="cell cited-by">
+											Cited by
+										</div>
+										<div class="cell">
+											<span><b>57</b> in Scopus</span>
+	 										<span><b>82</b> in Google Scholar</span>
+										</div>
+										<div class="cell">
+											<a href="#" class="btn btn-citation-subscribe"><i class="fa fa-bell-o"></i> Subscribe to citation alerts</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 visible-xs ">
+						<div class="abstract-info">
+							<h5>Abstract</h5>
+							<p>
+								Personalized recommendation by predicting user-browsing behavior using association-mining technology has gained much attention in web personalization research area. However, the resulting association patterns did not perform well in prediction of future browsing patterns due to the low matching rate of the resulting rules and users' browsing behavior. This research proposes a new personalized recommendation method integrating user clustering and association-mining techniques. Historical navigation sessions for each user are divided into frames of sessions based on a specific time interval. This research proposes a new clustering method, called HBM (Hierarchical Bisecting Medoids Algorithm) to cluster users based on the time-framed navigation sessions. Those navigation sessions of the same group are analyzed using the association-mining method to establish a recommendation model for similar students in the future. Finally, an application of this recommendation method to an e-learning web site is presented, including plans of recommendation policies and proposal of new efficiency measures. The effectiveness of the recommendation methods, with and without time-framed user clustering, are investigated and compared. The results showed that the recommendation model built with user clustering by time-framed navigation sessions improves the recommendation services effectively.
+							</p>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="author-keywords">
+							<h5>Keywords</h5>
+							<p>association mining, clustering, collaborative filtering, personalized  recommendation, web usage mining, web-based learning environment
+							</p>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="article-authors">
+							<h5>Authors</h5>
+							<p class="author-name">
+								Feng-Hsu Wang, Hsiu-Mei Shao
+							</p>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="publishing-info">
+							<p><a href="#">Expert Systems with Applications (2004) Volume: 27 Issue: 3</a></p>
+							<p>Pages: 365-377</p>
+							<p>ISSN: 09574174</p>
+							<p>DOI: <a href="#">10.1016/j.eswa.2004.05.005</a></p>
+							<p>Available from <a href="#">linkinghub.elsevier.com</a></p>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="citation">
+							<h5>Citation
+								<span class="action-btns">
+									<a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a>
+									<a href="#" class="btn btn-copy"><i class="fa fa-clipboard"></i></a>
+									<a href="#" class="btn btn-tex">T<sub>E</sub>X</a>
+								</span>
+							</h5>
+
+							<textarea name="" id="citation-mob">Wang, F. H., & Shao, H. M. (2004). Effective personalized recommendation based on time-framed navigation clustering and association mining. Expert systems with applications, 27(3), 365-377.
+							</textarea>
+							<p>
+								Cited by <b>57</b> in <a href="">Scopus</a> and <b>82</b> in <a href="">Google Scholar</a>
+							</p>
+							<a href="#" class="btn btn-citation-subscribe"><i class="fa fa-bell-o"></i> Subscribe to citation alerts</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="tab-pane" id="organize">
+					<div class="col-sm-12 col-md-12 col-lg-4 no-padd-xs no-padd-sm no-padd-md no-padd-left hidden-xs">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="info-block status">
+									<h5>Status</h5>
+									<ul>
+										<li class=""><i class="fa fa-flag active"></i>Flagged for Review</li>
+										<li class=""><i class="fa fa-eye-slash"></i>Unread</li>
+										<!-- <li class=""><i class="fa fa-star"></i>Add to my favorites</li> -->
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="info-block library-cat">
+									<h5>PPCT library categories <a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a></h5>
+
+									<ul>
+										<li><i class="fa fa-times"></i>data mining</li>
+										<li><i class="fa fa-times"></i>recommendation engine</li>
+										<li><i class="fa fa-times"></i>personalization tools</li>
+										<li><i class="fa fa-times"></i>feature extraction</li>
+										<li><i class="fa fa-times"></i>semantic web</li>
+										<li><i class="fa fa-times"></i>ontologies</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="info-block my-tags">
+									<h5>My tags <a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a></h5>
+
+									<ul>
+										<li><i class="fa fa-times"></i>vandelay industries</li>
+										<li><i class="fa fa-times"></i>community recommendations</li>
+										<li><i class="fa fa-times"></i>classification</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="info-block collections">
+									<h5>Research Collections <a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a></h5>
+
+									<ul>
+										<li><i class="fa fa-folder"></i>Prep Docs for ML Consultant (54)</li>
+										<li><i class="fa fa-folder"></i>Vandelay Industries (21)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-8 no-padd-left no-padd-xs no-padd-sm no-padd-md no-padd-right box-border-left hidden-xs">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="info-block path-to-file">
+									<h5>Path to this file in myIEEE Googe Drive <i class="fa fa-question"></i></h5>
+									<ul>
+										<li>Research</li>
+										<li>PPCT Library</li>
+										<li>Journal Articles</li>
+										<li>2004</li>
+										<li>Feng-Hsu Wang</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="info-block direct-url">
+									<h5>Direct URL</h5>
+									<input type="text" value="https://docs.google.com/a/thegrif.net/file/d/0B3DuOo-2On9nOHU0SHY0eVltS1k" disabled>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="info-block notes">
+									<h5>Notes</h5>
+									<p>
+										Alexander mentioned that this article might be relevant to the work we are doing with PPCT.
+										<i class="fa fa-times"></i>
+									</p>
+									<textarea name="" id="notes">capture notes about this publication...
+									</textarea>
+									<a href="#" class="btn btn-save-note">Save</a>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 visible-xs">
+						<div class="status">
+							<h5>Status</h5>
+							<ul>
+								<li class=""><i class="fa fa-flag"></i>Flagged for Review</li>
+								<li class=""><i class="fa fa-asterisk"></i>Unread</li>
+							</ul>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="collections">
+							<div class="table">
+								<div class="cell">
+									<h5>Research Collections</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-folder"></i>Prep Docs for ML Consultant (54)</li>
+								<li><i class="fa fa-folder"></i>Vandelay Industries (21)</li>
+							</ul>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="library-categories">
+							<div class="table">
+								<div class="cell">
+									<h5>PPCT library categories</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-times"></i>data mining</li>
+								<li><i class="fa fa-times"></i>recommendation engine</li>
+								<li><i class="fa fa-times"></i>personalization tools</li>
+								<li><i class="fa fa-times"></i>feature extraction</li>
+								<li><i class="fa fa-times"></i>semantic web</li>
+								<li><i class="fa fa-times"></i>ontologies</li>
+							</ul>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="my-tags">
+							<div class="table">
+								<div class="cell">
+									<h5>My tags</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-times"></i>vandelay industries</li>
+								<li><i class="fa fa-times"></i>community recommendations</li>
+								<li><i class="fa fa-times"></i>classification</li>
+							</ul>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="gdrive-path">
+							<div class="table">
+								<div class="cell">
+									<h5>Path to this file in myIEEE Googe Drive</h5>
+								</div>
+								<div class="help cell">
+									<a href="#"><i class="fa fa-question-circle"></i></a>
+								</div>
+							</div>
+							<a href="#">Research</a> /
+							<a href="#">PPCT Library</a> /
+							<a href="#">Journal Articles</a> /
+							<a href="#">2004</a> /
+							<a href="#">Feng-Hsu Wang</a>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="direct-url">
+							<div class="table">
+								<div class="cell">
+									<h5>Direct URL</h5>
+								</div>
+							</div>
+							<div class="table url">
+								<div class="cell">
+									<input type="text" value="https://docs.google.com/a/thegrif.net/file/d/0B3Du..."/>
+								</div>
+								<div class="copy cell">
+									<a href="#"><i class="fa fa-clipboard"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="big-spacer"></div>
+						<div class="notes-mob">
+							<h5>Notes</h5>
+							<div class="table">
+								<div class="frame cell">
+									<p>
+										Alexander mentioned that this article might be relevant to the work we are doing with PPCT.
+									</p>
+								</div>
+								<div class="cell delete">
+									<a class=""><i class="fa fa-times"></i></a>
+								</div>
+							</div>
+							<a href="#" class="btn btn-default btn-add-note">Add Note</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="tab-pane" id="share">
+					<div class="col-sm-12 col-md-12 col-lg-4 padd-xs no-padd-left no-padd-md no-padd-sm no-padd-left">
+						<div class="row">
+							<div class="col-sm-6 col-lg-12">
+								<div class="info-block manage-access">
+									<h5>Manage Access</h5>
+									<h6>Who has access:</h6>
+									<div class="users">
+										<img src="assets/img/library/avatars/1.png" alt="" class="user">
+										<img src="assets/img/library/avatars/2.png" alt="" class="user">
+										<img src="assets/img/library/avatars/3.png" alt="" class="user">
+										<img src="assets/img/library/avatars/4.png" alt="" class="user">
+										<img src="assets/img/library/avatars/5.png" alt="" class="user">
+										<img src="assets/img/library/avatars/6.png" alt="" class="user">
+										<img src="assets/img/library/avatars/7.png" alt="" class="user">
+										<img src="assets/img/library/avatars/8.png" alt="" class="user">
+										<img src="assets/img/library/avatars/9.png" alt="" class="user">
+										<img src="assets/img/library/avatars/10.png" alt="" class="user">
+										<img src="assets/img/library/avatars/11.png" alt="" class="user">
+										<img src="assets/img/library/avatars/12.png" alt="" class="user">
+										<a href="#" class="add-user"><i class="fa fa-plus"></i></a>
+									</div>
+									<div class="clearfix"></div>
+									<a href="#" class="btn btn-share-article"><i class="fa fa-google-plus"></i>Share this article</a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-12">
+								<div class="info-block communities">
+									<h5>Communities</h5>
+									<p class="members-only">
+										Explore these topics further by visiting an exclusive members-only PPCT community:
+
+										<span><i class="fa fa-users"></i><b>Pattern Analysis and Machine Intelligence</b></span>
+										<span><i class="fa fa-users"></i><b>Cybernetics</b></span>
+									</p>
+									<p class="public">
+										The following public communities are also discussing these topics:
+
+										<span><i class="fa fa-users"></i><b>Machine Learning, IR, Mining, Big Data</b></span>
+										<span><i class="fa fa-users"></i><b>Machine Learning</b></span>
+										<span><i class="fa fa-users"></i><b>Algorithms & Coding</b></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-8 padd-xs no-padd-md no-padd-sm no-padd-right box-border-left hidden-xs">
+						<div class="info-block discuss">
+							<h5>Discuss</h5>
+							<div class="top-links">
+								<a href="#">show stream</a>  |  <a href="#">view all comments</a>
+							</div>
+							<div class="table add-comment">
+								<div class="cell img">
+									<img src="assets/img/library/avatar_big.png" alt="Author">
+								</div>
+								<div class="cell">
+									<div class="text">
+										<div class="arrow"></div>
+										<textarea name="" id="comment-mob"></textarea>
+									</div>
+								</div>
+							</div>
+							<hr class="divider">
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big.png" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin</h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a class="reply-comment" href="#">Reply</a>|<a class="resolve-comment" href="#">Resolve</a>
+									</div>
+								</div>
+								<div class="table comment-responses">
+									<div class="cell left-indent"></div>
+									<div class="cell">
+										<div class="">
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<p>
+														<span>Robert Langdon</span> I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<p>
+														<span>Robert Langdon</span> I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+											<div class="response add-response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<textarea name="" id=""></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr class="divider">
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big_2.png" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin</h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a href="#">Reply</a>|<a href="#">Resolve</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-xs-12 visible-xs">
+						<div class="discuss-mobile">
+							<div class="table">
+								<div class="cell">
+									<h5>Discuss</h5>
+								</div>
+								<div class="cell links">
+									<a href="#" class="active">Show stream</a><a href="#">View all comments</a>
+								</div>
+							</div>
+							<div class="table add-comment">
+								<div class="cell img">
+									<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+								</div>
+								<div class="cell">
+									<div class="text">
+										<textarea name="" id="comment"></textarea>
+									</div>
+								</div>
+								<div class="cell send">
+									<a href="#"><i class="fa fa-comment-o"></i></a>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin <span>on Apr 28 at 7:35 P.M.</span></h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a class="btn reply-comment" href="#">Reply</a><a class="btn resolve-comment" href="#">Resolve</a>
+									</div>
+								</div>
+								<div class="table comment-responses">
+									<div class="cell left-indent"></div>
+									<div class="cell">
+										<div class="">
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<h6>Robert Langdon <span>on Apr 28 at 7:35 P.M.</span></h6>
+													<p>
+														I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<h6>Robert Langdon <span>on Apr 28 at 7:35 P.M.</span></h6>
+													<p>
+														I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big_2.png" class="img-responsive" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin <span>on Apr 28 at 7:35 P.M.</span></h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a class="btn reply-comment" href="#">Reply</a><a class="btn resolve-comment" href="#">Resolve</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="tab-pane" id="stats">
+					Stats
+				</div>
+				<div class="tab-pane" id="help">
+					Help
+				</div>
+			</div>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<!-- Right Panel -->
+	<div class="ads col-md-3 col-lg-2 hidden-sm hidden-xs">
+		<p class="advertisement center-block">Advertisement</p>
+		<div class="side-advertisement">
+			<a href="#" class="hidden-xs">
+				<img src="assets/img/profile/advertising-robots.png" alt="ad">
+			</a>
+		</div>
+	</div>
+	<!-- /Right Panel -->
+
+</div>
+
+<!-- Mobile -->
+<div class="container padd-xs hidden-xs">
+	<div class="row" id="article-mobile">
+		<div class="tabs-wrap col-xs-12">
+			<div class="row">
+				<ul class="nav nav-tabs" id="article-tabs">
+					<li class="active"><a href="#overview-mob" data-toggle="tab"><i class="fa fa-th-large"></i>Overview</a></li>
+					<li><a href="#organize-mob" data-toggle="tab"><i class="fa fa-tasks"></i>Organize</a></li>
+					<li><a href="#share-mob" data-toggle="tab"><i class="fa fa-comment"></i>Collaborate</a></li>
+					<div class="hidden"><!-- Hiding until views designs are ready, approx. August 2014-->
+						<li><a href="#stats-mob" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+						<li><a href="#help-mob" data-toggle="tab"><i class="fa fa-question-circle"></i></a></li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-12 no-padd padd-xs">
+			<div class="info-block">
+				<div class="tab-content">
+					<div class="tab-pane active" id="overview-mob">
+						<h4>Effective personalized recommendation based on time-framed navigation clustering and association mining</h4>
+						<div class="table view-full-pdf">
+							<div class="img cell">
+								<img src="assets/img/library/icon-pdf.png" width="32" alt="pdf">
+							</div>
+							<div class="cell">
+								<a class="view-full">View full version</a>
+							</div>
+						</div>
+						<p>Personalized recommendation by predicting user-browsing behavior using association-mining technology has gained much attention in web personalization research area. However, the resulting association patterns did not perform well in prediction of future browsing patterns due to the low matching rate of the resulting rules...</p>
+						<div class="table tags">
+							<div class="img cell">
+								<i class="fa fa-tags"></i>
+							</div>
+							<div class="cell">
+								<a class="tag">association mining</a>,
+								<a class="tag">clustering</a>,
+								<a class="tag">collaborative filtering</a>,
+								<a class="tag">personalized recommendation</a>,
+								<a class="tag">web usage mining</a>,
+								<a class="tag">web-based learning environment</a>
+							</div>
+						</div>
+						<hr class="divider row"/>
+						<div class="article-authors">
+							<h5>Authors</h5>
+							<div class="author table">
+								<div class="img cell">
+									<img src="assets/img/library/author_1.png" alt="Author">
+								</div>
+								<div class="description cell">
+									<p class="author-name">
+										Feng-Hsu Wang
+									</p>
+									<p>
+										Department of Computer and Communication Engineering, Ming Chuan University
+									</p>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<div class="author table">
+								<div class="img cell">
+									<img src="assets/img/library/author_2.jpg" alt="Author">
+								</div>
+								<div class="description cell">
+									<p class="author-name">
+										Hsiu-Mei Shao
+									</p>
+									<p>
+										Department of Information Management Ming Chuan University
+									</p>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="publishing-info">
+							<p><a href="#">Expert Systems with Applications (2004) Volume: 27 Issue: 3</a></p>
+							<p>Pages: 365-377</p>
+							<p>ISSN: 09574174</p>
+							<p>DOI: <a href="#">10.1016/j.eswa.2004.05.005</a></p>
+							<p>Available from <a href="#">linkinghub.elsevier.com</a></p>
+						</div>
+						<hr class="divider row"/>
+						<div class="citation">
+							<h5>Citation</h5>
+							<div class="action-btns">
+								<a href="#" class="btn btn-add"><i class="fa fa-plus"></i></a>
+								<a href="#" class="btn btn-copy"><i class="fa fa-clipboard"></i></a>
+								<a href="#" class="btn btn-bibtex">T<sub>E</sub>X</a>
+							</div>
+							<div class="clearfix"></div>
+							<div id="citation">
+								<p >
+									Wang, F. H., &amp; Shao, H. M. (2004). Effective personalized recommendation based on time-framed navigation clustering and association mining. Expert systems with applications, 27(3), 365-377.
+								</p>
+							</div>
+							<p>
+								Cited by <b>57</b> in <a href="#">Scopus</a> an <b>82</b> in <a href="#">Google Scholar</a>
+							</p>
+							<a href="#" class="btn btn-citation-subscribe">Subscribe for Citation Alerts</a>
+						</div>
+						<hr class="divider row"/>
+						<div id="notes-mob">
+							<h5>Notes</h5>
+							<div class="table">
+								<div class="frame cell">
+									<p>
+										Alexander mentioned that this article might be relevant to the work we are doing with PPCT.
+									</p>
+								</div>
+								<div class="cell delete">
+									<a class=""><i class="fa fa-times"></i></a>
+								</div>
+							</div>
+							<a href="#" class="btn btn-default btn-add-note">Add Note</a>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="organize-mob">
+						<h4>Effective personalized recommendation based on time-framed navigation clustering and association mining</h4>
+						<div class="status">
+							<h5>Status</h5>
+							<ul>
+								<li class=""><i class="fa fa-flag"></i>Flagged for Review</li>
+								<li class=""><i class="fa fa-asterisk"></i>Unread</li>
+							</ul>
+						</div>
+						<hr class="divider row"/>
+						<div class="collections">
+							<div class="table">
+								<div class="cell">
+									<h5>Research Collections</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-folder"></i>Prep Docs for ML Consultant (54)</li>
+								<li><i class="fa fa-folder"></i>Vandelay Industries (21)</li>
+							</ul>
+						</div>
+						<hr class="divider row"/>
+						<div class="library-categories">
+							<div class="table">
+								<div class="cell">
+									<h5>PPCT library categories</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-times"></i>data mining</li>
+								<li><i class="fa fa-times"></i>recommendation engine</li>
+								<li><i class="fa fa-times"></i>personalization tools</li>
+								<li><i class="fa fa-times"></i>feature extraction</li>
+								<li><i class="fa fa-times"></i>semantic web</li>
+								<li><i class="fa fa-times"></i>ontologies</li>
+							</ul>
+						</div>
+						<hr class="divider row"/>
+						<div class="my-tags">
+							<div class="table">
+								<div class="cell">
+									<h5>My tags</h5>
+								</div>
+								<div class="add cell">
+									<a href="#"><i class="fa fa-plus"></i></a>
+								</div>
+							</div>
+							<ul>
+								<li><i class="fa fa-times"></i>vandelay industries</li>
+								<li><i class="fa fa-times"></i>community recommendations</li>
+								<li><i class="fa fa-times"></i>classification</li>
+							</ul>
+						</div>
+						<hr class="divider row"/>
+						<div class="gdrive-path">
+							<div class="table">
+								<div class="cell">
+									<h5>Path to this file in myIEEE Googe Drive</h5>
+								</div>
+								<div class="help cell">
+									<a href="#"><i class="fa fa-question-circle"></i></a>
+								</div>
+							</div>
+							<a href="#">Research</a> /
+							<a href="#">PPCT Library</a> /
+							<a href="#">Journal Articles</a> /
+							<a href="#">2004</a> /
+							<a href="#">Feng-Hsu Wang</a>
+						</div>
+						<hr class="divider row"/>
+						<div class="direct-url">
+							<div class="table">
+								<div class="cell">
+									<h5>Direct URL</h5>
+								</div>
+							</div>
+							<div class="table url">
+								<div class="cell">
+									<input type="text" value="https://docs.google.com/a/thegrif.net/file/d/0B3Du..."/>
+								</div>
+								<div class="copy cell">
+									<a href="#"><i class="fa fa-clipboard"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="share-mob">
+						<h4>Effective personalized recommendation based on time-framed navigation clustering and association mining</h4>
+						<div class="discuss">
+							<div class="table">
+								<div class="cell">
+									<h5>Discuss</h5>
+								</div>
+								<div class="cell links">
+									<a href="#" class="active">Show stream</a><a href="#">View all comments</a>
+								</div>
+							</div>
+							<div class="table add-comment">
+								<div class="cell img">
+									<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+								</div>
+								<div class="cell">
+									<div class="text">
+										<textarea name="" id="comment"></textarea>
+									</div>
+								</div>
+								<div class="cell send">
+									<a href="#"><i class="fa fa-comment-o"></i></a>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin <span>on Apr 28 at 7:35 P.M.</span></h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a class="btn reply-comment" href="#">Reply</a><a class="btn resolve-comment" href="#">Resolve</a>
+									</div>
+								</div>
+								<div class="table comment-responses">
+									<div class="cell left-indent"></div>
+									<div class="cell">
+										<div class="">
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<h6>Robert Langdon <span>on Apr 28 at 7:35 P.M.</span></h6>
+													<p>
+														I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+											<div class="response table">
+												<div class="cell img">
+													<img src="assets/img/library/avatar_big.png" class="img-responsive" alt="Author">
+												</div>
+												<div class="cell response-text">
+													<h6>Robert Langdon <span>on Apr 28 at 7:35 P.M.</span></h6>
+													<p>
+														I often times will use algorithms that stem from collaborative filtering when struggling with a cryptex.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="table comment-author">
+									<div class="cell img">
+										<img src="assets/img/library/avatar_big_2.png" class="img-responsive" alt="Author">
+									</div>
+									<div class="cell comment-text">
+										<h6>Tom Griffin <span>on Apr 28 at 7:35 P.M.</span></h6>
+										<p>
+											This will work for PPCT if we can cluster users first based upon their profile and navigation history. Then we should (in theory) be able to integrate the collaborative filtering method and association-mining.
+										</p>
+										<a class="btn reply-comment" href="#">Reply</a><a class="btn resolve-comment" href="#">Resolve</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="divider row"/>
+						<div class="manage-access">
+							<h5>Manage Access</h5>
+							<div class="table">
+								<div class="cell access">
+									<h6>Who has access:</h6>
+								</div>
+								<div class="cell">
+									<a href="#"><i class="fa fa-question-circle"></i></a>
+								</div>
+							</div>
+							<div class="users">
+								<img src="assets/img/library/avatars/1.png" alt="" class="user">
+								<img src="assets/img/library/avatars/2.png" alt="" class="user">
+								<img src="assets/img/library/avatars/3.png" alt="" class="user">
+								<img src="assets/img/library/avatars/4.png" alt="" class="user">
+								<img src="assets/img/library/avatars/5.png" alt="" class="user">
+								<img src="assets/img/library/avatars/6.png" alt="" class="user">
+								<img src="assets/img/library/avatars/7.png" alt="" class="user">
+								<img src="assets/img/library/avatars/8.png" alt="" class="user">
+								<img src="assets/img/library/avatars/9.png" alt="" class="user">
+								<img src="assets/img/library/avatars/10.png" alt="" class="user">
+								<img src="assets/img/library/avatars/11.png" alt="" class="user">
+								<img src="assets/img/library/avatars/12.png" alt="" class="user">
+								<a href="#" class="add-user"><i class="fa fa-plus"></i></a>
+								<div class="clearfix"></div>
+							</div>
+							<a href="#" class="btn btn-share-article">Share this article</a>
+						</div>
+					</div>
+					<div class="tab-pane" id="stats-mob">
+						Article Statistics goes here
+					</div>
+					<div class="tab-pane" id="help-mob">
+						Help goes here
+					</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div class="big-spacer clearfix"></div>

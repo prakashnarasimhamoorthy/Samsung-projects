@@ -1,0 +1,34 @@
+<% _.each (data, function(community, index) { %>
+	<div class="community col-xs-12 col-sm-6 col-md-4 col-lg-4 <% if (index>2) { %> hidden-xs<% }%><% if (index>7) { %> hidden-sm hidden-md<% }%>">
+		<div class="table">
+			<div class="cell img">
+				<a href="<%= community.link %>"><img src="assets/img/network_communities/have_access/<%= community.image %>" class="img-responsive" alt="community logo"></a>
+			</div>
+			<div class="cell text">
+				<a href="<%= community.link %>"><%= community.title %><% if (community.lock == true) {%><i class="fa fa-unlock-alt"></i><%}%></a>
+
+				<span><%= community.members %> members</span>
+			</div>
+			<div class="cell btn-box-cog">
+				<ul class="nav nav-pills pull-right">
+					<li class="dropdown community-manage-btn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+						<ul class="dropdown-menu">
+							<li ><a href="#">Share group</a></li>
+							<li><a href="#">Invite to group</a></li>
+							<li><a href="#">Leave group</a></li>
+							<li><a href="#">Notifications</a></li>
+							<li class="btn-post"><a href="#"><i class="fa fa-check"></i> All Posts</a></li>
+							<li class="btn-post"><a href="#"><i class="fa fa-check"></i> My Connections Posts</a></li>
+							<li class="btn-post"><a href="#"><i class="fa fa-check"></i> Off</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<% }); %>
+<div class="clearfix"></div>
+<div class="box-btn-show-all">
+	<a href="#searchresults-communities" class="btn btn-show-all">Show All</a>
+</div>

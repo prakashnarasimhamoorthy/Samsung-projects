@@ -1,0 +1,44 @@
+<div class="header-invite dropdown-menu">
+	<div class="dropdown-arrow"></div>
+	<div class="col-xs-12">
+		<h5>Invite your contacts</h5>
+		<p>Quickly find your people you may know by searching your email contacts.</p>
+
+		<div class="mail-selector col-xs-12 no-padd">
+			<a href="#" class="gmail pull-left">
+				<img src="assets/img/header/invite_gmail.png" width="54">
+				<div class="clearfix"></div>
+				Gmail
+			</a>
+
+			<a href="#" class="other pull-left">
+				<img src="assets/img/header/invite_other.png" width="54">
+				<div class="clearfix"></div>
+				Other
+			</a>
+		</div>
+
+		<input class="email hidden" type="email" value="<%= data.email %>">
+
+		<textarea class="message hidden"><%= data.message %></textarea>
+
+		<div class="spacer clearfix"></div>
+
+		<div class="col-xs-12 no-padd">
+			<div class="col-xs-4 no-padd-left">
+				<button class="btn btn-default btn-continue">
+					Continue
+				</button>
+				<button class="btn btn-default btn-send hidden">
+					Send
+				</button>
+			</div>
+			<div class="col-xs-4">
+				<button class="btn btn-default btn-cancel">
+					Cancel
+				</button>
+			</div>
+		</div>
+		<div class="clearfix big-spacer"></div>
+	</div>
+</div>

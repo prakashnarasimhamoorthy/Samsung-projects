@@ -1,0 +1,726 @@
+<div id="profile" class="container">
+	<div class="spacer clearfix visible-xs"></div>
+
+	<div class="row padd-xs">
+		<!-- Left Panel -->
+		<div class="col-xs-12 col-md-9 col-lg-10 no-padd">
+
+			<div class="profile-details info-block col-xs-12 search-result">
+				<div class="col-xs-4 col-sm-2 no-padd">
+					<div class="user-img">
+						<img class="img-responsive" src="assets/img/people/<%= data.avatar %>" alt="avatar">
+					</div>
+				</div>
+				<div class="user-details col-xs-8 col-sm-10">
+					<h3 class="pull-left"><%= data.name %></h3>
+					<div class="social-networks hidden-xs">
+						<a href="#" class="social-icon google-plus active pull-left">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="#" class="social-icon twitter active pull-left">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon linkedin active pull-left">
+							<i class="fa fa-linkedin"></i>
+						</a>
+						<a href="#" class="social-icon facebook pull-left hidden">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="social-icon orkut pull-left hidden">
+							<i class="fa fa-circle-o"></i>
+						</a>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="col-xs-12 no-padd">
+						<div class="table fellow">
+							<div class="cell img">
+								<a href="#">
+									<img src="assets/img/people_search/<%= data.kite %>" width="23" alt="fellow icon">
+								</a>
+							</div>
+							<div class="cell">
+								<%= data.title%>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="category hidden-md hidden-lg">
+						<p><b>Category:</b> <%= data.category %></p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-10 pull-right no-padd-xs">
+					<div class="social-networks col-xs-12 no-padd visible-xs">
+						<a href="#" class="social-icon google-plus active pull-left">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="#" class="social-icon twitter active pull-left">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon linkedin active pull-left">
+							<i class="fa fa-linkedin"></i>
+						</a>
+						<a href="#" class="social-icon facebook hidden-xs pull-left">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="social-icon orkut hidden-xs pull-left">
+							<i class="fa fa-circle-o"></i>
+						</a>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="location pull-left">
+						<i class="fa fa-map-marker"></i>
+						<div class="town btn btn-default"><%= data.town %></div>
+						<div class="state btn btn-default"><%= data.state %></div>
+						<div class="country btn btn-default"><%= data.country %></div>
+					</div>
+
+					<div class="hidden-md"><div class="hidden-lg clearfix"></div></div>
+
+					<div class="section pull-left">
+						<i class="fa fa-globe"></i>&nbsp;<a href="#"><%= data.section %></a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="category hidden-xs pull-left">
+						<p class="hidden-sm"><b>Category:</b> <%= data.category %></p>
+					</div>
+
+					<div class="hidden-md"><div class="hidden-lg clearfix"></div></div>
+
+					<p class="citation col-xs-12 no-padd"><b class="hidden-xs"><span class="hidden-sm">Citation: </span></b><span class="hidden-md"><i class="fa fa-quote-left hidden-lg"></i></span> <span class="hidden-xs"><span class="hidden-sm">“</span></span><%= data.citation %><span class="hidden-xs"><span class="hidden-sm">” </span></span>(<%= data.citationYear %>)</p>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="communicate col-xs-12 no-padd">
+				<div class="msg btn btn-default pull-right"><i class="fa fa-envelope"></i>&nbsp;Message</div>
+				<div class="conn btn btn-default pull-right"><i class="fa fa-plus"></i>&nbsp;Connect</div>
+			</div>
+
+			<div class="interests info-block col-xs-12">
+				<h4>Interests</h4>
+
+				<div class="interests_tags"></div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="col-xs-12 info-block">
+				<div class="bio">
+					<h4>Biography</h4>
+
+					<p>Tom Griffin lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lectus vitae sapien facilisis
+						mattis sit amet sed lorem. Proin commodo, magna et convallis malesuada, elit est ornare risus, eu congue mi
+						mi sed massa.</p>
+
+					<p>Sed rhoncus volutpat justo, venenatis hendrerit dolor commodo semper. Donec gravida cursus ante non bibendum.
+						Cras aliquet mi nec nunc pulvinar, sit amet convallis purus mollis. Aenean in aliquet magna, sit amet
+						dapibus metus.</p>
+
+					<div class="hidden-xs hidden-sm">
+						<p>Praesent ac gravida ante. Nulla ut adipiscing justo. Sed interdum neque eget elit bibendum, vel vehicula
+							augue facilisis. Nunc arcu est, adipiscing tristique fringilla posuere, eleifend at mi ornare risus.</p>
+
+						<p>Phasellus volutpat tempor lorem et ultricies. In tortor ante, congue sed tortor auctor, pellentesque
+							aliquam risus. Suspendisse justo elit, dictum eget lobortis id, rhoncus vitae.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div id="experience">
+					<div class="col-xs-12 no-padd">
+						<h4 class="top-border">Experience</h4>
+						<h5>Innovation Projects Manager</h5>
+						<h6>IEEE</h6>
+
+						<p class="date">August 2012 – Present (1 year 11 months) Piscataway, New Jersey</p>
+						<ul>
+							<li>Manages research and development activities supporting new product development and IEEE's use of
+								cloud computing, open source software, mobile development, and big data/analytics.
+							</li>
+							<li>Responsible for ideation, pipeline development, resource management, valuation, and reporting for
+								all IT product development initiatives.
+							</li>
+							<li>Provides thought leadership in the use of emerging technologies and encourages experimentation
+								during architecture and design activities for IEEE's portfolio of technology projects.
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div id="education">
+					<div class="col-xs-12 no-padd">
+						<h4 class="top-border">Education</h4>
+						<h5>University of South Carolina-Columbia</h5>
+						<h6>MS Engineering, Systems Engineering</h6>
+
+						<p class="date">1983 – 1985</p>
+
+						<p>Masters of Computer Engineering</p>
+
+						<p>Activities and Societies: IEEE</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="publications">
+					<h4 class="top-border">Publications</h4>
+
+					<div class="clearfix"></div>
+					<a href="#">Linear Networks and Systems</a>
+
+					<p>W.K. Chen and T. M. Griffin,Belmont, CA: Wadsworth, 1993</p>
+					<a href="#">Infrared Nation</a>
+
+					<p>T. M. Griffin and G. Pevere, The International Journal of Infrared Design, vol. 33, pp. 56-99, Jan. 1979</p>
+					<a href="#">Alternating current fed power supply</a>
+
+					<p>T. M. Griffin and E.E. Rebecca, U.S. Patent 7 897 777, Nov. 3, 1987</p>
+				</div>
+
+				<div class="contact-info col-xs-12 no-padd">
+					<h4 class="top-border">Contact Information</h4>
+
+					<div class="clearfix"></div>
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<p>
+								<span class="field">
+									<i class="fa fa-home"></i> Mailing Address
+								</span>
+								445 Hoes Lane, Piscataway, NJ 07054
+							</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<p>
+								<span class="field">
+									<i class="fa fa-envelope"></i> E-mail Address
+								</span>
+									<a href="mailto:Mr.Tom.Griffin@ieee.org">Mr.Tom.Griffin@ieee.org</a>
+							</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<p>
+								<span class="field">
+									<i class="fa fa-phone-square"></i> Phone Number
+								</span>
+								571-555-8888
+							</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<p>
+								<span class="field">
+									<i class="fa fa-comment"></i> Instant Messenger
+								</span>
+								t.p.griffin (G+ Chat)
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ieee-memberships-mobile col-xs-12 col-sm-6 hidden-md hidden-lg no-padd">
+				<div class="info-block col-xs-12 no-padd">
+					<h4>IEEE Memberships</h4>
+					<div class="col-xs-12 col-md-6 col-lg-6 no-padd">
+						<div class="table society">
+							<div class="cell img-text">
+								<a href="#">
+									<img src="assets/img/societies/computer.png" width="40" alt="society icon">
+									<span>IEEE Computer Society</span>
+								</a>
+							</div>
+							<div class="cell g-icon">
+								<a href="#">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="table society">
+							<div class="cell img-text">
+								<a href="#">
+									<img src="assets/img/societies/photonics.png" width="40" alt="society icon">
+									<span>IEEE Photonics Society</span>
+								</a>
+							</div>
+							<div class="cell g-icon">
+							</div>
+						</div>
+						<div class="table society">
+							<div class="cell img-text">
+								<a href="#">
+									<img src="assets/img/societies/oes.png" width="40" alt="society icon">
+									<span>IEEE Oceanic Engineering</span>
+								</a>
+							</div>
+							<div class="cell g-icon">
+								<a href="#">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="more-items col-xs-12 no-padd">
+							<div class="table society">
+								<div class="cell img-text">
+									<a href="#">
+										<img src="assets/img/societies/computer.png" width="40" alt="society icon">
+										<span>IEEE Computer Society</span>
+									</a>
+								</div>
+								<div class="cell g-icon">
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="table society">
+								<div class="cell img-text">
+									<a href="#">
+										<img src="assets/img/societies/photonics.png" width="40" alt="society icon">
+										<span>IEEE Photonics Society</span>
+									</a>
+								</div>
+								<div class="cell g-icon">
+								</div>
+							</div>
+							<div class="table society">
+								<div class="cell img-text">
+									<a href="#">
+										<img src="assets/img/societies/oes.png" width="40" alt="society icon">
+										<span>IEEE Oceanic Engineering</span>
+									</a>
+								</div>
+								<div class="cell g-icon">
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="show-all">
+							<a href="#" class="btn btn-info">Show All</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="communities col-xs-12 col-sm-6 col-md-12 info-block no-padd-xs no-padd-sm">
+			<h4>PPCT Communities</h4>
+			<div class="hidden-sm">
+				<div class="hidden-xs">
+					<!-- Wrapper for slides -->
+					<div class="item">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Transactions on Computing</a>
+										<p>8,000 members</p>
+									</div>
+									<div class="icon cell">
+										<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Robotics and Automation Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/future-of-robotics.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Vehicular Technology Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/climate-change.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Power & Energy Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Product Safety Engineering Society</a>
+										<p>8,000 members</p>
+									</div>
+									<div class="icon cell">
+										<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Aerospace and Electronic Systems Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="row more-items">
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Transactions on Computing</a>
+										<p>8,000 members</p>
+									</div>
+									<div class="icon cell">
+										<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Robotics and Automation Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/future-of-robotics.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Vehicular Technology Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/climate-change.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Power & Energy Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Product Safety Engineering Society</a>
+										<p>8,000 members</p>
+									</div>
+									<div class="icon cell">
+										<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<div class="table">
+									<div class="cell img">
+										<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+									</div>
+									<div class="cell desc">
+										<a href="#">IEEE Aerospace and Electronic Systems Society</a>
+										<p>8,000 members</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="show-all">
+							<div class="btn btn-info">Show All</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="col-xs-12 hidden-lg no-padd">
+				<div class="col-xs-12 hidden-md no-padd">
+					<div class="table community-mobile">
+						<div class="img cell">
+							<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+						</div>
+						<div class="content cell">
+							<p><a href="#">Data Analysis</a></p>
+							<p>Provided by IEEE</p>
+							<p>8293 members</p>
+						</div>
+						<div class="icon cell">
+							<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+						</div>
+					</div>
+					<div class="table community-mobile">
+						<div class="img cell">
+							<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+						</div>
+						<div class="content cell">
+							<p><a href="#">Neuroscience</a></p>
+							<p>Provided by IEEE</p>
+							<p>5216 members</p>
+						</div>
+					</div>
+					<div class="table community-mobile">
+						<div class="img cell">
+							<img class="img-responsive" src="assets/img/communities/future-of-robotics.png" alt="community logo">
+						</div>
+						<div class="content cell">
+							<p><a href="#">Future of Robotics</a></p>
+							<p>Provided by IEEE</p>
+							<p>17319 members</p>
+						</div>
+					</div>
+
+					<div class="more-items col-xs-12 no-padd">
+						<div class="table community-mobile">
+							<div class="img cell">
+								<img class="img-responsive" src="assets/img/communities/data-analysis.png" alt="community logo">
+							</div>
+							<div class="content cell">
+								<p><a href="#">Data Analysis</a></p>
+								<p>Provided by IEEE</p>
+								<p>8293 members</p>
+							</div>
+							<div class="icon cell">
+								<div class="lock-round-bg"><i class="fa fa-unlock"></i></div>
+							</div>
+						</div>
+						<div class="table community-mobile">
+							<div class="img cell">
+								<img class="img-responsive" src="assets/img/communities/neuroscience.png" alt="community logo">
+							</div>
+							<div class="content cell">
+								<p><a href="#">Neuroscience</a></p>
+								<p>Provided by IEEE</p>
+								<p>5216 members</p>
+							</div>
+						</div>
+						<div class="table community-mobile">
+							<div class="img cell">
+								<img class="img-responsive" src="assets/img/communities/future-of-robotics.png" alt="community logo">
+							</div>
+							<div class="content cell">
+								<p><a href="#">Future of Robotics</a></p>
+								<p>Provided by IEEE</p>
+								<p>17319 members</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="show-all">
+						<div class="btn btn-info">Show All</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- /Left Panel -->
+
+		<!-- Right Panel -->
+		<div class="col-xs-12 col-md-3 col-lg-2 no-padd-right hidden-sm hidden-xs">
+			<div id="connections-wrap" class="info-block hidden-xs hidden-sm">
+				<div class="connections col-xs-12">
+					<h4>Connections</h4>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<% _.each(_.range(0,3), function(n) {%>
+							<div class="table">
+								<% _.each(_.range(1,3+1), function(m) {%>
+								<div class="cell">
+									<a href="#profile-searchresult">
+										<img class="img-responsive"
+										     src="assets/img/people/person_<%= (n * 3 + m ) % 5 + 1 %>.png" alt="avatar">
+									</a>
+								</div>
+								<% });%>
+							</div>
+							<% });%>
+						</div>
+					</div>
+					<p>Jennifer has 267 PPCT connections</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="all-bg">
+					<a href="#network-people" class="btn btn-info">Show All</a>
+				</div>
+			</div>
+
+			<div class="ieee-memberships info-block col-xs-12">
+				<h4>IEEE Memberships</h4>
+				<a href="#">
+					<div class="table society">
+						<div class="img cell">
+							<img src="assets/img/societies/oes.png" width="40" alt="society icon">
+						</div>
+						<div class="txt cell">
+							<span>IEEE Oceanic Engineering</span> <i class="fa fa-google-plus-square"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="table society">
+						<div class="img cell">
+							<img src="assets/img/societies/mtt-s.png" width="40" alt="society icon">
+						</div>
+						<div class="txt cell">
+							<span>IEEE Microwave Theory and Techniques Society</span> <i class="fa fa-google-plus-square"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="table society">
+						<div class="img cell">
+							<img src="assets/img/societies/ias.png" width="40" alt="society icon">
+						</div>
+						<div class="txt cell">
+							<span>IEEE Magnetics Society</span>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="table society">
+						<div class="img cell">
+							<img src="assets/img/societies/pels.png" width="40" alt="society icon">
+						</div>
+						<div class="txt cell">
+							<span>IEEE Photonics Society</span>
+						</div>
+					</div>
+				</a>
+
+				<div class="more-items col-xs-12 no-padd">
+					<a href="#">
+						<div class="table society">
+							<div class="img cell">
+								<img src="assets/img/societies/oes.png" width="40" alt="society icon">
+							</div>
+							<div class="txt cell">
+								<span>IEEE Oceanic Engineering</span> <i class="fa fa-google-plus-square"></i>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="table society">
+							<div class="img cell">
+								<img src="assets/img/societies/mtt-s.png" width="40" alt="society icon">
+							</div>
+							<div class="txt cell">
+								<span>IEEE Microwave Theory and Techniques Society</span> <i class="fa fa-google-plus-square"></i>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="table society">
+							<div class="img cell">
+								<img src="assets/img/societies/ias.png" width="40" alt="society icon">
+							</div>
+							<div class="txt cell">
+								<span>IEEE Magnetics Society</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="table society">
+							<div class="img cell">
+								<img src="assets/img/societies/pels.png" width="40" alt="society icon">
+							</div>
+							<div class="txt cell">
+								<span>IEEE Photonics Society</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="show-all">
+					<a href="#" class="btn btn-info">Show All</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="ads col-md-3 col-lg-2 hidden-sm hidden-xs">
+			<p class="advertisement center-block">Advertisement</p>
+
+			<div class="side-advertisement">
+				<a href="#" class="hidden-xs">
+					<img src="assets/img/profile/advertising-robots.png" alt="ad">
+				</a>
+			</div>
+		</div>
+		<!-- /Right Panel -->
+
+		<!-- Mobile and Tablet bottom Ads -->
+		<div class="col-xs-12 no-padd hidden-lg hidden-md">
+			<div class="ads center-block">
+				<p>Advertisement</p>
+				<a href="#">
+					<img src="assets/img/ads/banner-tablet.png" class="advertising visible-sm" alt="banner" width="720">
+					<img src="assets/img/ads/banner-mobile.png" class="advertising center-block visible-xs" width="300" alt="banner">
+				</a>
+				<div class="spacer clearfix"></div>
+			</div>
+		</div>
+		<div class="spacer clearfix"></div>
+	</div>
+</div>

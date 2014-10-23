@@ -1,0 +1,46 @@
+<div class="folders-results col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padd">
+	<div class="box-folder-nav">
+		<a href="" class="btn btn-return pull-left hidden-xs"><i class="fa fa-reply"></i> Return</a>
+		<p class="pull-right hidden-xs">Showing 3 of 3 Research Collections</p>
+		<p class="visible-xs">Showing 3 of 3 Research Collections</p>
+		<div class="clearfix"></div>
+	</div>
+	<% _.each(articles, function(article,index) { %>
+	<div class="col-lg-2 col-md-3 col-sm-4 folders-item-wrap">
+		<div class="folders-item">
+			<div class="folder-item-action-wrap">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-folder-item-action"><i class="fa fa-cog"></i></a>
+				<div class="dropdown-menu">
+					<div class="dropdown-arrow visible-xs"></div>
+					<ul>
+						<li><a data-toggle="modal" data-backdrop="false" data-target="#rename-collection" href="#"><i class="fa fa-edit"></i>Rename</a></li>
+						<li><a data-dismiss="dropdown-menu" class="btn-delete-folder" href="#"><i class="fa fa-trash-o"></i>Delete</a></li>
+					</ul>
+				</div>
+			</div>
+			<i class="fa fa-folder"></i>
+			<h5><%=article["Title"]%></h5>
+			<h6><%=article["Publications"]%></h6>
+			<div class="delete-popup-wrap"></div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<% }); %>
+	<div class="clearfix"></div>
+	<div class="row box-create-btn">
+		<a href="#" data-toggle="modal" data-backdrop="false" data-target="#create-new-collection" class="btn btn-create-new-collection">Create a New Research Collection</a>
+	</div>
+	<div id="create-new-collection">
+		<h5>Create research collection</h5>
+		<input type="text">
+		<a href="#" class="btn">Create Collection</a>
+		<a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">Cancel</a>
+	</div>
+	<div id="rename-collection">
+		<h5>Rename research collection</h5>
+		<input type="text">
+		<a href="#" class="btn">Rename Collection</a>
+		<a href="#" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">Cancel</a>
+	</div>
+</div>
+<div class="big-spacer clearfix"></div>

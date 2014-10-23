@@ -1,0 +1,63 @@
+<div class="network-activities-commnity-join">
+	<% _.each (data, function(activity, index) { %>
+		<%= index == 2 ? people_mobile : '' %>
+		<div class="col-xs-12 info-block no-padd no-padd-bottom">
+			<div class="person col-xs-12 padd">
+				<div class="avatar col-xs-3 col-sm-2 no-padd-left">
+					<img src="assets/img/profile/avatars/<%= activity.image %>" class="img-responsive" alt="avatar">
+				</div>
+				<div class="info col-xs-9 col-sm-10 no-padd">
+					<div class="dropdown">
+						<a href="#"><%= activity.name %></a>
+						<% if (_.size(activity.others) > 0) {%>
+							and
+							<a href="#" data-toggle="dropdown">
+								<%= _.size(activity.others) %>
+								others
+							</a>
+							<div class="dropdown-menu">
+								<div class="dropdown-arrow"></div>
+								<ul>
+									<% _.each (activity.others, function(other, index) { %>
+										<li>
+											<a href="#">
+												<img src="assets/img/network_communities/members/<%= other %>.jpg" class="img-responsive" alt="avatar">
+											</a>
+										</li>
+									<% }) %>
+								</ul>
+							</div>
+						<% } %>
+					</div>
+					<p><span class="date"><%= activity.date %></span></p>
+				</div>
+			</div>
+			<div class="clearfix spacer"></div>
+			<div class="community col-xs-offset-1 col-sm-offset-2 padd no-padd-left">
+				<div class="col-xs-2 col-sm-1 no-padd">
+					<img src="assets/img/network_communities/logos/<%= activity.logo %>" class="img-responsive" alt="avatar">
+				</div>
+				<div class="info col-xs-10 col-sm-11 no-padd-right">
+					<% if (activity.fullAbout == true) { %>
+						<%= activity.about %>
+					<% } else { %>
+						<p class="info">
+							<%= activity.about %>
+							...
+							<a href="#">More</a>
+						</p>
+					<% } %>
+				</div>
+				<div class="clearfix spacer"></div>
+				<a href="#" class="btn hidden-xs pull-right">Request Invitation</a>
+				<div class="clearfix"></div>
+				<div class="clearfix spacer"></div>
+			</div>
+			<div class="block-actions visible-xs">
+				<a href="#" class="btn">Request Invitation</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<%= index == 2 ? communities_mobile : '' %>
+	<% }) %>
+</div>

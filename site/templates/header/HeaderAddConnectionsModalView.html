@@ -1,0 +1,43 @@
+<div id="header-add-connections-modal" class="modal-dialog modal-lg">
+	<div class="modal-content col-xs-12 no-padd">
+		<div class="head col-xs-12">
+			<h4>Add Connections</h4>
+			<p>We found <%= data.found %> people you probable know on PPCT when you added your address book. Select the people you’d like to connect to.</p>
+			<div class="col-xs-6 no-padd">
+				<label>
+					<input type="checkbox" class="checkbox" checked="checked">Select All
+				</label>
+			</div>
+			<div class="col-xs-6 no-padd">
+				<p class="text-right"><%= data.found %> selected</p>
+			</div>
+		</div>
+		<div class="body col-xs-12 no-padd-right">
+			<div class="connections col-xs-12 no-padd">
+				<% _.each(data.connections, function(connection) { %>
+					<div class="connection col-xs-6 no-padd">
+						<div class="info-block">
+							<label class="table">
+								<div class="check-ctrl cell">
+									<input type="checkbox" class="checkbox" checked="checked">
+								</div>
+								<div class="avatar cell">
+									<a href="#profile-searchresult"><img src="assets/img/header/connections/<%= connection.avatar %>" width="60" alt="avatar"></a>
+								</div>
+								<div class="name">
+									<b><a href="#profile-searchresult"><%= connection.name %></a></b>
+									<p><%= connection.position %></p>
+								</div>
+							</label>
+						</div>
+					</div>
+				<% }); %>
+			</div>
+		</div>
+		<div class="foot col-xs-12 no-padd">
+			<button class="btn btn-default">Add Connections</button>
+			<button class="btn btn-default">Skip This Step</button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>

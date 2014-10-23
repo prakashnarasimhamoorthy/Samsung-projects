@@ -1,0 +1,52 @@
+<ul>
+	<li class="top-icons no-padd visible-xs">
+		<div class="col-xs-12 visible-xs">
+			<div class="col-xs-3"><a href="#headermobile-notifications"><img src="assets/img/main_menu/icon_notifications_flag.png" width="26"><span class="notifications-count">5</span></a></div>
+			<div class="col-xs-3"><a href="#toolboxmobile"><img src="assets/img/main_menu/icon_toolbox.png" width="26"></a></div>
+			<div class="col-xs-3"><a href="#headermobile-invite"><img src="assets/img/main_menu/icon_invite.png" width="26"></a></div>
+			<div class="col-xs-3"><a href="#"><img src="assets/img/main_menu/icon_sign_out.png" width="26"></a></div>
+		</div>
+		<div class="clearfix visible-xs"></div>
+	</li>
+	<li class="<% if (data.activeMenuItem == 'menu-home') { %> active<% } %>"><a href="#home"><img src="assets/img/main_menu/icon_home.png" width="26"><span>Home</span></a></li>
+	<li class="<% if (data.activeMenuItem == 'menu-network') { %>active mm-opened<% } %>"><a href="#network"><img src="assets/img/main_menu/icon_network.png" width="26"><span>Network</span></a>
+		<ul>
+			<li class="<% if (data.activeMenuSubItem == 'li-communities') { %>active<% } %>"><a href="#network-communities">Communities</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-qa') { %>active<% } %>"><a href="#network-qa">Question & Answer</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-people') { %>active<% } %>"><a href="#network-people">People</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-events') { %>active<% } %>"><a href="#network-events">Events</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-activities') { %>active<% } %>"><a href="#network-activities">Activities</a></li>
+		</ul>
+	</li>
+	<li class="<% if (data.activeMenuItem == 'menu-library') { %>active mm-opened<% } %>"><a href="#library"><img src="assets/img/main_menu/icon_library.png" width="26"><span>Research</span></a>
+		<ul>
+			<li class="<% if (data.activeMenuSubItem == 'li-library') { %>active<% } %>"><a href="#library">Library</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-research-groups') { %>active<% } %>"><a href="#researchgroups">Research Groups</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-research-activities') { %>active<% } %>"><a href="#research-activities">Activities</a></li>
+		</ul>
+	</li>
+	<li class="<% if (data.activeMenuItem == 'menu-profile') { %>active mm-opened<% } %>"><a href="#profile"><img src="assets/img/main_menu/icon_profile.png" width="26"><span>My Profile</span></a>
+		<ul>
+			<li class="<% if (data.activeMenuSubItem == 'li-details') { %>active<% } %>"><a href="#profile-details">Details</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-activities') { %>active<% } %>"><a href="#profile-activities">Activities</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-connections') { %>active<% } %>"><a href="#profile-connections">Connections</a></li>
+		</ul>
+	</li>
+
+	<li class="<% if (data.activeMenuItem == 'menu-settings') { %>active mm-opened<% } %>"><a href="#settings"><img src="assets/img/main_menu/icon_settings.png" width="26"><span>Settings</span></a>
+		<ul>
+			<li class="<% if (data.activeMenuSubItem == 'li-activity-stream') { %>active<% } %>"><a href="#settings-activitystream">Activity Stream</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-attached-services') { %>active<% } %>"><a href="#settings-attachedservices">Attached Services</a></li>
+			<li class="<% if (data.activeMenuSubItem == 'li-email-notifications') { %>active<% } %>"><a href="#settings-emailnotifications">E-mail Notifications</a></li>
+		</ul>
+	</li>
+	<li class="visible-sm"><a href="cart"><img src="assets/img/main_menu/icon_cart.png" width="26"><span>Cart</span></a></li>
+	<li class="visible-sm"><a href="#"><img src="assets/img/main_menu/icon_sign_out.png" width="26"><span>Sign Out</span></a></li>
+	<li class="side-link"><h3>IEEE Sites</h3></li>
+	<li class="side-link"><a href="http://www.ieee.org/" target="_blank">IEEE.org</a></li>
+	<li class="side-link"><a href="http://ieeexplore.ieee.org/" target="_blank">IEEE <em>Xplore</em> Digital Library</a></li>
+	<li class="side-link"><a href="http://standards.ieee.org/" target="_blank">IEEE Standards</a></li>
+	<li class="side-link"><a href="http://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a></li>
+	<li class="side-link"><a href="http://www.ieee.org/sitemap.html" target="_blank">More Sites</a></li>
+	<li class="side-logo"><a href="http://www.ieee.org/"><img width="135" src="assets/img/ieee_logo.png" alt=""></a></li>
+</ul>

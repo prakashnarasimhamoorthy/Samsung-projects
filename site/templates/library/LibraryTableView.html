@@ -1,0 +1,76 @@
+<div class="table-full col-xs-12 no-padd">
+	<div class="thead col-xs-12 no-padd hidden-xs">
+		<div class="td select-all hidden-xs col-sm-2 col-lg-2"><a href="#"><input type="checkbox" class="checkbox"/> Select All </a> </div>
+		<div class="td authors hidden-xs col-sm-2 col-lg-2"><a href="#">Authors <i class="fa fa-angle-down"></i></a> </div>
+		<div class="td title  col-xs-12 col-sm-4 col-lg-4"><a href="#">Title </a></div>
+		<div class="td source hidden-xs col-sm-3 col-lg-3"><a href="#">Source </a></div>
+		<div class="td year   hidden-xs col-sm-1 col-lg-1"><a href="#">Year </a></div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="tbody">
+	<% _.each(articles, function(article, index) { %>
+	<div class="tr <% if (index%2) { %>even<% } else { %>odd<% }%>">
+		<div class="td box-group-btn hidden-xs col-sm-2">
+			<input type="checkbox" class="checkbox"/>
+			<a href="#" class="favorite<% if (index==1) { %> active<% }%>" title="Add to Favorites"><i class="fa fa-star fa-2x"></i></a>
+			<div class="generate-citation">
+				<a href="#" class="no-marg-left generate-citation-icon"><i class="fa fa-book fa-2x"></i></a>
+				<div class="generate-citation-popup">
+					<div class="generate-citation-arrow"></div>
+					<span>Generate Citation</span>
+					<a href="#" class="btn btn-single">Single</a>
+					<a href="#" class="btn btn-multiple">Multiple</a>
+				</div>
+			</div>
+			<% if (article.type == "clip") { %>
+				<a href="#" class="paperclip-icon"><i class="fa fa-paperclip"></i></a>
+			<% } else if (article.type == "tex") { %>
+				<a href="#" class="tex-icon"><img src="assets/img/library/icon-tex.png" alt="icon-tex"/></a>
+			<% } else if (article.type == "word") { %>
+				<a href="#" class="word-icon"><i class="fa fa-file-word-o"></i></a>
+			<% } else if (article.type == "pdf") { %>
+				<a href="#" class="pdf-icon"><i class="fa fa-file-pdf-o"></i></a>
+			<% } %>
+		</div>
+		<div class="td authors hidden-xs col-sm-2"><%=article["Authors"]%></div>
+		<div class="td title col-xs-10 col-sm-4">
+			<div class="visible-xs checkbox-mobile">
+				<input type="checkbox" class="checkbox"/>
+				<a href="#" class="favorite<% if (index==1) { %> active<% }%>" title="Add to Favorites"><i class="fa fa-star fa-2x"></i></a>
+				<div class="generate-citation">
+					<a href="#" class="no-marg-left generate-citation-icon">
+						<i class="fa fa-book fa-2x"></i>
+					</a>
+					<div class="generate-citation-popup">
+						<div class="generate-citation-arrow"></div>
+						<span>Generate Citation</span>
+						<a href="#" class="btn btn-single">Single</a>
+						<a href="#" class="btn btn-multiple">Multiple</a>
+					</div>
+				</div>
+				<% if (article.type == "clip") { %>
+				<a href="#" class="paperclip-icon"><i class="fa fa-paperclip"></i></a>
+				<% } else if (article.type == "tex") { %>
+				<a href="#" class="tex-icon"><img src="assets/img/library/icon-tex.png" alt="icon-tex"/></a>
+				<% } else if (article.type == "word") { %>
+				<a href="#" class="word-icon"><i class="fa fa-file-word-o"></i></a>
+				<% } else if (article.type == "pdf") { %>
+				<a href="#" class="pdf-icon"><i class="fa fa-file-pdf-o"></i></a>
+				<% } %>
+			</div>
+			<div class="popup-toggle cell hidden-xs"><%=article["Title"]%></div>
+			<div class="popup-toggle-mobile cell visible-xs"><%=article["Title"]%><a href="main.html#/librarypopup-mobile" class="visible-xs tr-lock"></a></div>
+			<div class="visible-xs authors-and-source">
+				<p>Authors: <a href="#"><%=article["Authors"]%></a></p>
+				<p>Source: <a href="#"><%=article["Source"]%></a></p>
+			</div>
+		</div>
+		<div class="td source hidden-xs col-sm-3"><%=article["Source"]%></div>
+		<div class="td year hidden-xs col-sm-1"><%=article["Year"]%></div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="slidedown-window"></div>
+	<% }); %>
+	<div class="big-spacer hidden-sm hidden-xs"></div>
+</div>

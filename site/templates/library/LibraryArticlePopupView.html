@@ -1,0 +1,152 @@
+<div class="article-popup hidden-xs">
+	<div class="tab-content">
+		<div class="abstract-tab tab-pane active">
+			<div class="pop-heading col-xs-12">
+				<h4 class="col-xs-12 no-padd-left">Personalized recommendation in social tagging systems using hierarchical clustering</h4>
+				<div class="col-xs-12 no-padd">
+					<a href="#" class="btn-pdf btn btn-default"><img src="assets/img/library/icon-pdf-curve.png" width="18" alt="view"> View PDF</a>
+					<a href="#<%= commonApp.props.librarySearchResult == true ? 'searchresults-libraryarticle' : 'libraryarticle' %>"
+						class="btn-detail btn btn-default">
+						View Article Detail
+					</a>
+					<a href=".metadata-tab" class="btn-metadata btn btn-default" data-toggle="tab">
+						<i class="fa fa-pencil-square-o"></i>
+						Edit document metadata
+					</a>
+				</div>
+				<a href="#" class="btn btn-close-popup col-xs-1 pull-right no-padd">
+					<i class="fa fa-times"></i>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix big-spacer"></div>
+			<div class="pop-body col-xs-12">
+				<div id="overview">
+					<div class="row">
+						<div class="col-sm-4 padd-xs">
+							<div class="popup-authors col-xs-12 no-padd">
+								<h5>Authors</h5>
+								<p class="author-name">
+									D Catteddu
+								</p>
+							</div>
+
+							<div class="keywords col-xs-12 no-padd">
+								<h5>Keywords</h5>
+								<ul>
+									association mining,
+									clustering,
+									collaborative filtering,
+									personalized  recommendation,
+									web usage mining,
+									web-based learning environment
+								</ul>
+							</div>
+
+							<div class="citation col-xs-12 no-padd">
+								<h5>Citation</h5>
+								<p>
+									Wang, F. H., & Shao, H. M. (2004). Effective personalized recommendation based on time-framed navigation clustering and association mining. Expert systems with applications, 27(3), 365-377.
+								</p>
+							</div>
+
+							<div class="big-spacer clearfix"></div>
+
+							<button href="#" class="btn-copy btn btn-default">
+								Copy Citation to Clipboard
+							</button>
+						</div>
+						<div class="col-sm-8 padd-xs">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="info-block abstract-info">
+										<h5>Abstract</h5>
+										<p>
+											Personalized recommendation by predicting user-browsing behavior using association-mining technology has gained much attention in web personalization research area. However, the resulting association patterns did not perform well in prediction of future browsing patterns due to the low matching rate of the resulting rules and users' browsing behavior. This research proposes a new personalized recommendation method integrating user clustering and association-mining techniques. Historical navigation sessions for each user are divided into frames of sessions based on a specific time interval. This research proposes a new clustering method, called HBM (Hierarchical Bisecting Medoids Algorithm) to cluster users based on the time-framed navigation sessions. Those navigation sessions of the same group are analyzed using the association-mining method to establish a recommendation model for similar students in the future. Finally, an application of this recommendation method to an e-learning web site is presented, including plans of recommendation policies and proposal of new efficiency measures. The effectiveness of the recommendation methods, with and without time-framed user clustering, are investigated and compared. The results showed that the recommendation model built with user clustering by time-framed navigation sessions improves the recommendation services effectively.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="metadata-tab tab-pane">
+			<div class="pop-heading col-xs-12">
+				<h4 class="col-xs-12 no-padd-left">Personalized recommendation in social tagging systems using hierarchical clustering</h4>
+
+				<a href="#" class="btn btn-close-popup col-xs-1 pull-right no-padd">
+					<i class="fa fa-times"></i>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="pop-body col-xs-12">
+				<label class="col-xs-12 no-padd auto-file">
+					<input type="checkbox" checked="checked">
+					Auto File is Enabled
+				</label>
+
+				<div class="col-sm-12 col-md-6 no-padd-left padd-xs">
+					<h5>Required Data</h5>
+
+					<input type="text" placeholder="Document Title">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Publication Title">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="ISSN">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Author">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Year">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Volume">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Issue">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Page Number">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="CrossRef DOI">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="URL">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Publisher">
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 no-padd-right padd-xs no-padd-sm">
+					<h5>Suggested Data</h5>
+
+					<input type="text" placeholder="Secondary Author">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Author Affiliation	">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="FundRef ID">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="ORCID">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="End Page">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Publication Date">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="Key Word">
+					<div class="clearfix"></div>
+					<input type="text" placeholder="URL to Full Text">
+					<div class="clearfix"></div>
+					<div class="big-spacer clearfix"></div>
+					<div class="clearfix"></div>
+
+
+				</div>
+				<div class="clearfix"></div>
+				<button href=".abstract-tab" class="finish-btn btn btn-info pull-right" data-toggle="tab">
+					Finish
+				</button>
+				<div class="clearfix spacer"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+

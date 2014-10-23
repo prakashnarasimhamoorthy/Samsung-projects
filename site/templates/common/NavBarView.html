@@ -1,0 +1,113 @@
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li style="margin-top:7px"><span><a href="https://plus.google.com/u/0/" target="_newtab"
+				                                    style="color:#777;">+<%=firstName%></a></span></li>
+				<li class="dropdown">
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+						<span class="glyphicon glyphicon-th" style="font-size: 18px;"></span>
+					</a>
+
+					<div class="dropdown-menu" style="padding-bottom:0px">
+
+						<ul style="width:320px" class="gb_q gb_t">
+							<li class="gb_a"><a class="gb_b" id="gb119" href="https://plus.google.com/u/1/?tab=cX"
+							                    target="_blank" data-pid="119"><span class="gb_d"
+							                                                         style="background-position: -138px -69px"></span><span
+									class="gb_e">+<%=firstName%></span></a></li>
+							<li class="gb_a"><a class="gb_b" id="gb1" href="http://www.google.com/" target="_blank"
+							                    data-pid="1"><span class="gb_d"
+							                                       style="background-position: -237px -69px"></span><span
+									class="gb_e">Search</span></a></li>
+							<li class="gb_a"><a class="gb_b" id="gb23" href="http://mail.google.com/" target="_blank"
+							                    data-pid="23"><span class="gb_d"
+							                                        style="background-position: -277px 0"></span><span
+									class="gb_e">Mail</span></a></li>
+							<div style="clear:both;"></div>
+							<li class="gb_a"><a class="gb_b" id="gb25" href="https://drive.google.com/a/ieee.org"
+							                    target="_blank" data-pid="25"><span class="gb_d"
+							                                                        style="background-position: -306px -138px"></span><span
+									class="gb_e">Drive</span></a></li>
+							<li class="gb_a"><a target="_blank" class="gb_b" id="gb24"
+							                    href="https://calendar.google.com/a/ieee.org" data-pid="24"><span
+									class="gb_d" style="background-position: -69px -207px"></span><span class="gb_e">Calendar</span></a>
+							</li>
+							<li class="gb_a"><a class="gb_b" id="gb38" href="https://sites.google.com/?tab=m3"
+							                    target="_blank" data-pid="38"><span class="gb_d"
+							                                                        style="background-position: -69px -69px"></span><span
+									class="gb_e">Sites</span></a></li>
+							<div style="clear:both;"></div>
+							<li class="gb_a"><a class="gb_b" id="gb3"
+							                    href="https://groups.google.com/grphp?hl=en&amp;tab=cg&amp;authuser=1"
+							                    target="_blank" data-pid="3"><span class="gb_d"
+							                                                       style="background-position: -258px -207px"></span><span
+									class="gb_e">Groups</span></a></li>
+							<li class="gb_a"><a class="gb_b" id="gb53" href="https://www.google.com/contacts/a/ieee.org"
+							                    target="_blank" data-pid="53"><span class="gb_d"
+							                                                        style="background-position: -138px -207px"></span><span
+									class="gb_e">Contacts</span></a></li>
+							<div style="clear:both;"></div>
+						</ul>
+						<div style="clear:both;"></div>
+
+						<a class="gb_r gb_kb" target="_blank" href="http://www.google.com/intl/en/options/"
+						   id="gb-more">More</a>
+
+					</div>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<%if(userProfile.pictureUrl != null){%>
+						<img src="<%=userProfile.pictureUrl%>" height="25" style="border-radius:2px">
+						<%} else {%>
+						<img src="img/avatar.png" height="25" style="border-radius:2px">
+						<%}%>
+
+						<b class="caret"></b></a>
+
+					<div class="dropdown-menu" style="min-width:270px;background:#f5f5f5">
+						<div>
+							<div class="row" style="margin-bottom:5px;padding:1px 7px">
+
+								<div class="col-sm-4">
+									<%if(userProfile.pictureUrl != null){%>
+									<img src="<%=userProfile.pictureUrl%>" height="85" style="border-radius:2px">
+									<%} else {%>
+									<img src="img/avatar.png" height="85" style="border-radius:2px">
+									<%}%>
+								</div>
+								<div class="col-sm-8"><%=firstName%> <%=lastName%>
+									<p><a target="_newtab" href="https://www.google.com/settings">Account</a> - <a
+											target="_newtab" href="http://www.google.com/intl/en/policies/">Privacy</a>
+									</p>
+
+									<p><a href="https://plus.google.com/u/0/me" target="_newtab"
+									      class="btn btn-primary">View Profile</a></p>
+								</div>
+							</div>
+
+							<div style="padding:5px 7px 0px 5px;border-top:1px solid #ccc">
+								<div class="pull-left"><a href="#" id="revoke-link" class="btn btn-default">Revoke</a>
+								</div>
+								<div class="pull-right"><a href="/ppctweb/rest/api/signout" class="btn  btn-default">SignOut</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+</div>

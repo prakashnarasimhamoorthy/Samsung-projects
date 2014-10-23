@@ -1,0 +1,49 @@
+<div class="spacer clearfix visible-xs"></div>
+<div class="container">
+	<div id="research-groups" class="info-block col-xs-12 padd-xs">
+		<div class="detailed-results">
+			<% _.each (data, function(group) { %>
+				<div class="group col-xs-12 no-padd">
+				<div class="col-xs-4 col-md-2 img">
+					<a href="#"><img src="assets/img/network_communities/<%= group.image %>" class="img-responsive" alt="group logo"></a>
+				</div>
+				<div class="col-xs-8 col-md-4 description">
+					<a class="group-title" href="#"><%= group.title %></a>
+					<p class="hidden-md hidden-lg">
+						Provided by <a href="#"><%= group.providedBy %></a>
+					</p>
+					<p class="hidden-xs">
+						<%= group.text %>
+					</p>
+					<a href="#" class="members-count visible-xs"><%= group.membersNumber %> members</a>
+					<a href="#" class="btn btn-info btn-learn-more pull-left hidden-md hidden-lg"><%= group.button %></a>
+					<i class="fa fa-question popup-toggle visible-sm pull-left"></i>
+					<a href="#" class="hidden-md hidden-lg members-count hidden-xs"><%= group.membersNumber %> members</a>
+				</div>
+				<div class="col-xs-3 provide hidden-xs hidden-sm">
+					<p>
+						Provided by <a href="#"><%= group.providedBy %></a>
+					</p>
+					<a href="#" class="btn btn-info btn-learn-more"><%= group.button %></a>
+					<div class="popup-wrap">
+						<i class="fa fa-question popup-toggle"></i>
+						<p class="popup-prompt">
+							<%= group.popup %>
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-3 hidden-xs hidden-sm" style="position: relative">
+					<div class="members">
+						<% _.each(group.membersIds, function(memberId) {%>
+						<a href="#/member/<%= memberId %>"><img src="assets/img/network_communities/members/<%= memberId %>.jpg" class="img-responsive" alt="member"></a>
+						<% });%>
+						<div class="clearfix"></div>
+						<a href="#"><%= group.membersNumber %> members</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<% }); %>
+		</div>
+	</div>
+</div>

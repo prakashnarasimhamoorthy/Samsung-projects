@@ -1,0 +1,180 @@
+<div id="bg" class="container">
+	<div id="bg-images"></div>
+
+	<div class="no-padd-xs">
+		<div id="create-interest" >
+			<div class="apps-setup">
+				<h2>Create your interest profile</h2>
+				<div class="no-padd">
+					<a href="#gapps-existing" class="btn btn-later pull-right">Next <i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="nav-wrap col-xs-12 no-padd-xs">
+					<ul class="nav navbar-nav">
+						<li class="active col-xs-4 no-padd">
+							<a href="#search-tab" data-toggle="tab">Search</a>
+						</li>
+						<li class="col-xs-4 no-padd">
+							<a href="#all-disciplines" data-toggle="tab">All Disciplines</a>
+						</li>
+						<li class="col-xs-4 no-padd your-selections not-active">
+							<a href="#your-selections" data-toggle="tab">Your Selections</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+				<div class="tab-content">
+					<div class="tab-pane active" id="search-tab">
+						<div class="input-wrap col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 no-padd-md no-padd-lg">
+							<input type="text" class="#personalize-experiencesearch file-tags-input" placeholder="Search for disciplines of your interest" />
+							<a class="search-icon" href="#personalize-experiencesearch"><i class="fa fa-search"></i></a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 personalize-experience no-padd-md no-padd-lg">
+							<h3>Personalize your IEEE experience</h3>
+							<h4>Knowing your interests helps us recommend relevant articles, researchers, memberships, and subscriptions.</h4>
+							<img src="assets/img/library_setup/personalize-arrow.png" alt="">
+							<div class="clearfix"></div>
+						</div>
+						<!-- <div class="clearfix"></div>
+						<div class="col-xs-12 no-padd-xs results-on-typing">
+							<ul class="results-list">
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Aerospace control</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Air traffic control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Attitude control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Ground support</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Command and control systems</a>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Oscillators</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Digital-controlled oscillators</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Voltage-controlled oscillators</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Communication systems</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Communication system control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Communication system traffic control</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Computer applications</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Control engineering computing</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+							<a href="#personalize-experienceaz" class="btn btn-load-more">Load More</a>
+							<div class="clearfix"></div>
+						</div> -->
+						<div class="clearfix"></div>
+					</div>
+					<div class="tab-pane " id="all-disciplines">
+						<ul class="alphabet-list hidden-xs">
+							<% _.each(_.range(
+							'A'.charCodeAt(),
+							'Z'.charCodeAt()
+							), function(letter, index) { %>
+							<li class="<% if (index == 0){ %>active<% } %>"><a href="#"><%= String.fromCharCode(letter) %></a></li>
+							<% }) %>
+						</ul>
+						<div id="alphabet-scroller" class="visible-xs">
+							<ul class="alphabet-list-mobile ">
+								<% _.each(_.range(
+								'A'.charCodeAt(),
+								'Z'.charCodeAt()
+								), function(letter, index) { %>
+								<li class="<% if (index == 0){ %>active<% } %>"><a href="#"><%= String.fromCharCode(letter) %></a></li>
+								<% }) %>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-xs-12 no-padd-xs">
+							<ul class="results-list">
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Aerospace control</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Air traffic control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Attitude control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Ground support</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Command and control systems</a>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Oscillators</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Digital-controlled oscillators</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Voltage-controlled oscillators</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Communication systems</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Communication system control</a></li>
+										<li><a href="#"><i class="fa fa-check"></i>Communication system traffic control</a></li>
+									</ul>
+								</li>
+								<li class="col-md-6 col-xs-12">
+									<a href="#"><i class="fa fa-check"></i>Computer applications</a>
+									<ul>
+										<li><a href="#"><i class="fa fa-check"></i>Control engineering computing</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+						<a href="#personalize-experienceyour" class="btn btn-load-more">Load More</a>
+						<div class="clearfix"></div>
+					</div>
+					<div class="tab-pane " id="your-selections">
+						<div class="dropdown-nav pull-right">
+							<span class="pull-left type-of-sort"><i class="fa fa-sort-amount-asc"></i></span>
+							<ul class="nav pull-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="filter-selections-current">Date added</span>
+										<i class="fa fa-chevron-down pull-right"></i>
+									</a>
+									<ul class="dropdown-menu filter-selections">
+										<li><a href="#">Alphabet</a></li>
+										<li class="filter-selections-current"><a href="#">Date added</a></li>
+										<li><a href="#">Popularity</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+						<div class="interests-tags">
+							<div class="interest pull-left">System Architecture<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">CRM<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Program Management<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Software Design<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Web Analytics<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Web Design<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Enterprise Architecture<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Cloud Computing<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Fraud<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Project Management Analytics<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Digital Asset Management<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Marketing<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Interaction Design<i class="remove fa fa-times"></i></div>
+							<div class="interest pull-left">Agile Methodologies<i class="remove fa fa-times"></i></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>

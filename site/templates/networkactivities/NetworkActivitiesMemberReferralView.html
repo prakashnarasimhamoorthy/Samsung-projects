@@ -1,0 +1,33 @@
+<div class="member-referral">
+	<% _.each (data, function(activity, index) { %>
+		<%= index == 2 ? people_mobile : '' %>
+		<%= index == 3 ? communities_mobile : '' %>
+		<div class="col-xs-12 info-block no-padd no-padd-bottom">
+			<div class="table post-head">
+				<div class="cell img">
+					<a href="#"><img src="assets/img/network/<%= activity.image %>" class="" alt=""></a>
+				</div>
+				<div class="cell title">
+					<h4><span>Thank you for joining</span> <a href="#"><%= activity.title %></a></h4>
+					<span class="date"><%= activity.dateadded %></span>
+				</div>
+			</div>
+			<div class="table post-description">
+				<div class="cell post-img">
+					<img src="assets/img/network/<%= activity.image2 %>" class="" alt="">
+				</div>
+				<div class="cell post-text">
+					<%= activity.text %> <a href="#"><%= activity.providedBy %></a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<a href="#" class="btn btn-view-community hidden-xs"><i class="fa fa-users"></i>View Community</a>
+			<div class="clearfix"></div>
+			<div class="block-actions visible-xs">
+				<a href="#" class="btn btn-comment"><i class="fa fa-comment"></i>Comment</a>
+				<a href="#" class="btn btn-view-community"><i class="fa fa-users"></i>View Community</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	<% }); %>
+</div>

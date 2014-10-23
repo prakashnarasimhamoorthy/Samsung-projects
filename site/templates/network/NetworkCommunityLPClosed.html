@@ -1,0 +1,88 @@
+<div class="container no-padd">
+	<div class="spacer clearfix visible-xs"></div>
+	<div id="network-community-lp-closed">
+		<div class="community-details info-block col-xs-12 search-result">
+			<div class="col-xs-4 col-sm-3 col-md-2 no-padd-xs no-padd-right img-wrap">
+				<div class="img">
+					<img src="assets/img/network/cloud.png" class="img-responsive" alt="img">
+				</div>
+			</div>
+			<div class="details col-xs-8 col-sm-9 col-md-10">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-7">
+						<h3>Cloud Computing</h3>
+					</div>
+					<div class="details-wrapper col-xs-12 col-sm-3 col-md-2">
+						<a href="#" class="details-action visible">
+							<span>Hide Details</span>
+							<i class="fa fa-angle-up"></i>
+							<i class="fa fa-angle-down"></i>
+						</a>
+					</div>
+					<div class="closed-wrapper col-xs-12 col-sm-4 col-md-3">
+						<i class="fa fa-unlock-alt"></i>
+						Closed Community
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-9 col-md-10 pull-right no-padd-xs">
+				<p class="citation col-xs-12 no-padd">This community covers all major areas of computing and information technology, including computer hardware, software development, multimedia, and IT security.</p>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-xs-12 col-md-9 no-padd network-community-lp-closed-content">
+			<div class="info-block network-community-lp-closed-content-box">
+				<div class="col-sm-6 join-wrap">
+					<p>
+						<i class="fa fa-lock"></i>
+						You do not have access to this community.
+						You must first join <a href="#">IEEE Photonix Society</a>.
+					</p>
+					<a href="#" class="btn btn-join">Join now</a>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1 visit-us">
+					<span>Visit our communities on</span>
+					<div class="links">
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="info-block">
+				<h4>Communities you may be interested in</h4>
+				<div id="result-may-interest">
+					<% _.each (data, function(community, index) { %>
+					<div class="community col-xs-12 col-sm-6">
+						<div class="table">
+							<div class="cell img">
+								<a href="#network-communitylp"><img src="assets/img/network_communities/have_access/<%= community.image %>" class="img-responsive" alt="community logo"></a>
+							</div>
+							<div class="cell text">
+								<a href="#network-communitylp"><%= community.title %><% if (community.lock == true) {%><i class="fa fa-unlock-alt"></i><%}%></a>
+
+								<span><%= community.members %> members</span>
+							</div>
+						</div>
+					</div>
+					<% }); %>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-3 no-padd-right hidden-xs hidden-sm">
+			<div class="ads col-xs-12 hidden-sm hidden-xs">
+				<div class="side-advertisement a160">
+					<p class="advertisement center-block">Advertisement</p>
+					<a href="#"><img class="" src="assets/img/ads/rectangle.png" width="160" alt="Advertisement"/></a>
+					<div class="big-spacer clearfix"></div>
+					<a href="#"><img class="" src="assets/img/ads/advertising-robots.png" width="160" alt="Advertisement"/></a>
+				</div>
+				<div class="big-spacer clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>

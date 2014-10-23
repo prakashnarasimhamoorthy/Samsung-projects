@@ -1,0 +1,77 @@
+<% _.each (data, function(file, index) { %>
+<div class="item-wrap -item-<%= id + index  %>">
+	<div class="item-remove row"></div>
+	<div class="item-content">
+		<div class="document col-xs-12 no-padd">
+			<div class="table title-header-activities">
+				<div class="img avatar cell">
+					<a href="<%= file.name_link %>">
+						<img class="img-responsive" src="assets/img/profile/avatar_bw.jpg" alt="sportlight">
+					</a>
+				</div>
+				<div class="content cell">
+					<p><a href="<%= file.name_link %>"><%= file.name%> </a> <span>uploaded a document</span></p>
+					<span class="time pull-left"><%= file.time %></span>
+				</div>
+			</div>
+			<a class="btn btn-remove-item" href="" data-id="<%= id + index %>" data-toggle="tooltip" data-placement="top" title="Remove item"><i class="fa fa-times"></i></a>
+			<div class="table document-folder">
+				<div class="img cell">
+					<i class="fa fa-file-text-o fa-2x"></i>
+				</div>
+				<div class="content cell">
+					<p><b><%= file.title %></b></p>
+					<div class="file-folder pull-left hidden-xs">
+						<i class="fa fa-folder"></i>
+						<a href="#"><%= file.folder %></a>
+						<span class="separator">&frasl;</span>
+						<a href="#"><%= file.subfolder %></a>
+					</div>
+				</div>
+			</div>
+			<div class="file-folder pull-left visible-xs">
+				<i class="fa fa-folder"></i>
+				<a href="#"><%= file.folder %></a>
+				<span class="separator">&frasl;</span>
+				<a href="#"><%= file.subfolder %></a>
+			</div>
+			<div class="content cell hidden-xs hidden-sm">
+				<p><%= file.text %></p>
+			</div>
+			<div class="table document-save padd-xs">
+				<div class="content cell hidden-xs hidden-lg hidden-md">
+					<p><%= file.text %></p>
+				</div>
+				<div class="cell">
+					<a href="#" class="btn btn-save pull-right">
+						<img src="assets/img/home/icon-gd-save.png" alt="gd">
+						View
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="block-comments">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="leave-comment table">
+					<div class="avatar cell hidden-xs">
+						<a href="#profile"><img src="assets/img/profile/avatars/person-1.png" width="30px"></a>
+					</div>
+					<div class="input cell">
+						<input type="text" class="form-control" placeholder="Add a comment">
+						<div style="display: none;" class="form-expanded">
+							<textarea>It will be quite </textarea>
+							<div class="block-send">
+								<a class="btn-cancel btn btn-default pull-right" href="#">Cancel</a>
+								<a class="btn-send btn btn-default pull-right" href="#">Send</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<% }); %>

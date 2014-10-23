@@ -1,0 +1,73 @@
+<div class="upload-dialog modal-content modal-dialog library-upload-modal">
+	<div class="modal-header hidden-xs">
+		<a href="#" class="close" data-dismiss="modal"><i class="fa fa-times"></i></a>
+		<h4 class="modal-title">PPCT Upload: Select File</h4>
+	</div>
+	<div class="modal-body hidden-xs">
+		<div class="drop-zone jumbotron text-center">
+			<h5>Drag and Drop file here</h5>
+			<i class="fa fa-file-text-o"></i>
+			<i class="fa fa-file-text-o rotated"></i>
+		</div>
+		<p class="text-center">or</p>
+		<p class="text-center">
+			<button id="upload-btn" class="btn btn-default">
+				Select a file
+			</button>
+			<input id="upload-files" class="hidden" type="file" id="files" name="files[]" multiple="" accept="application/pdf">
+		</p>
+		<div class="clearfix"></div>
+		<div id="uploaded-files"></div>
+		<div class="clearfix"></div>
+		<button class="continue-btn btn btn-success pull-right">
+			Continue
+		</button>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="upload-dialog-mobile modal-header visible-xs">
+		<a href="#" class="close-mobile" data-dismiss="modal"><i class="fa fa-times"></i></a>
+		<h4 class="modal-title">PPCT Upload: Select Files</h4>
+	</div>
+	<div class="upload-dialog-mobile modal-body visible-xs">
+		<h5>Selected files:</h5>
+		<div class="files">
+			<div class="file table">
+				<div class="remove cell"><a href="#"><i class="fa fa-times"></i></a></div>
+				<div class="icon cell"><img src="assets/img/library/files/icon_pdf.png" width="22" alt="file"></div>
+				<div class="name cell">
+					<p>content-based-recommendation-systems.pdf</p>
+				</div>
+			</div>
+			<div class="file table">
+				<div class="remove cell"><a href="#"><i class="fa fa-times"></i></a></div>
+				<div class="icon cell"><img src="assets/img/library/files/icon_word.png" width="22" alt="file"></div>
+				<div class="name cell">
+					<p>collaborative-filtering-for-implicit-feedback-data.doc</p>
+				</div>
+			</div>
+			<div class="file table">
+				<div class="remove cell"><a href="#"><i class="fa fa-times"></i></a></div>
+				<div class="icon cell"><img src="assets/img/library/files/icon_text.png" width="22" alt="file"></div>
+				<div class="name cell">
+					<p>effective-personalized-recommendation-based-on-time.txt</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<button class="add-btn btn btn-default">
+					Add More Files
+				</button>
+			</div>
+			<div class="col-xs-6">
+				<button class="continue-btn btn btn-success">
+					Continue
+				</button>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>

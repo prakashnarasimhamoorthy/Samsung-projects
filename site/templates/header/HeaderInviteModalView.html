@@ -1,0 +1,38 @@
+<div id="header-invite-modal" class="modal-dialog modal-lg">
+	<div class="modal-content col-xs-12 no-padd">
+		<div class="head col-xs-12">
+			<h4>Invite a colleague to PPCT</h4>
+			<p>Stay in touch with your contacts we found when you added your address book. Invite them to PPCT so that they can connect with you.</p>
+			<div class="col-xs-6 no-padd">
+				<label>
+					<input type="checkbox" class="checkbox" checked="checked">Select All
+				</label>
+			</div>
+			<div class="col-xs-6 no-padd">
+				<p class="text-right"><%= data.selected %> selected</p>
+			</div>
+		</div>
+		<div class="body col-xs-12">
+			<div class="colleagues info-block col-xs-12">
+				<% _.each(data.colleagues, function(colleague) { %>
+					<div class="colleague col-xs-12 no-padd">
+						<div class="name col-xs-6 no-padd">
+							<label>
+								<input type="checkbox" class="checkbox" checked="checked">
+								<b><a href="mailto:<%= colleague.email %>"><%= colleague.name %></a></b>
+							</label>
+						</div>
+						<div class="email col-xs-6 no-padd">
+							<p class="text-right"><%= colleague.email %></p>
+						</div>
+					</div>
+				<% }); %>
+			</div>
+		</div>
+		<div class="foot col-xs-12 no-padd">
+			<button class="btn btn-default">Invite to PPCT</button>
+			<button class="btn btn-default">Skip This Step</button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>

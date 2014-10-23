@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="spacer"></div>
+	<div class="header-profile info-block">
+		<div class="section profile-info">
+			<div class="table">
+				<div class="cell img">
+					<img src="assets/img/header/<%= data.avatar %>" alt="avatar">
+				</div>
+				<div class="cell description">
+					<b><%= data.name %></b>
+				</div>
+			</div>
+			<p><a href="#"><i class="fa fa-map-marker"></i> Use current location</a></p>
+		</div>
+		<div class="section">
+			<h5>IEEE Membership Status</h5>
+			<p><%= data.status %></p>
+			<div class="clearfix spacer"></div>
+			<p><%= data.membership %></p>
+			<p><a href="#"><%= data.location %></a></p>
+		</div>
+		<div class="section manage">
+			<h5>Manage</h5>
+			<a href="#">Personal Profile</a>
+			<a href="#">My Orders</a>
+			<a href="#">Payment Profile</a>
+			<a href="#">Add Memberships</a>
+		</div>
+		<div class="section">
+			<a href="#">Privacy & Settings</a>
+		</div>
+		<div class="section">
+			<a href="#">IEEE Contact Center</a>
+		</div>
+	</div>
+</div>
