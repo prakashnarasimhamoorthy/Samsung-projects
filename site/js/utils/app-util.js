@@ -20,13 +20,13 @@ var appUtil = {
 	views : {},
 	badgeImg:{
 		"image_base_url":"/ppctweb/assets/img/grade/",
-		"student member":"ieee_kite_green_students.png",
-		"graduate student member":"ieee_kite_green_students.png",
-		"associate member":"ieee_kite_red_associate.png",
-		"member":"ieee_kite_light_blue_members.png",
-		"senior member":"ieee_kite_blue_senior.png",
-		"fellow":"ieee_kite_gold_fellows.png",
-		"honorary member":"ieee_kite_light_blue_members.png",
+		"student member":"sam_kite_green_students.png",
+		"graduate student member":"samsung_kite_green_students.png",
+		"associate member":"samsung_kite_red_associate.png",
+		"member":"samsung_kite_light_blue_members.png",
+		"senior member":"samsung_kite_blue_senior.png",
+		"fellow":"samsung_kite_gold_fellows.png",
+		"honorary member":"samsung_kite_light_blue_members.png",
 		"life fellow":"life_fellow.png",
 		"life member":"life_member.png",
 		"life senior":"life_senior.png",
@@ -377,7 +377,7 @@ var appUtil = {
  * Tooltip v1.0 - a full featured, light-weight, customizable ppct UI tool tip
  * help text and tool tip text link Plugin
  *
- * Author: Nagarajan Ramalingam <n.ramalingam@ieee.org> and IEEE MISI deliverables
+ * Author: Nagarajan Ramalingam <n.ramalingam@samsung.org> and samsung MISI deliverables
  * Date: 8th Aug 20011
  *
  * Usage:
@@ -403,7 +403,7 @@ var appUtil = {
  * ****key.panel.miniCatalog.help.researchCollections corresponds to jsp in props file /jsp/common/richTextToolTip.jsp
  *
  * Example#: external link for tooltip for future enhancements to goto CMS url
- * <a class="help-tooltip" href="http://www.ieeelocal.org:90/abc/gettt.html?toolTipId=key.panel.miniCatalog.help.researchCollections">
+ * <a class="help-tooltip" href="http://www.samsunglocal.org:90/abc/gettt.html?toolTipId=key.panel.miniCatalog.help.researchCollections">
  *		<img border="0" title="<s:text name='key.page.membership.label.help' />" alt="<s:text name='key.page.membership.label.help' />" src="<s:url value='/assets/images/helpicon.gif' />">
  *</a>
  */
